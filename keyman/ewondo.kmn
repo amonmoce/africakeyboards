@@ -1,0 +1,90 @@
+﻿store(&VERSION) '6.0'
+store(&NAME) 'Ewondo'
+store(&COPYRIGHT) 'kasahorow'
+store(&ETHNOLOGUECODE) 'ewo'
+
+begin Unicode > use(main)
+
+c Diacritics with combining class 220 (below base charater)
+store(cc220_Key) U+002A U+003A U+005F
+store(cc220_Char) U+0323 U+0324 U+0331
+
+c Diacritics with combining class 230 (above base character)
+store(cc230_Key) U+0060 U+0027 U+0036 U+007E U+002D U+0039 U+0038 U+0022 U+0030
+store(cc230_Char) U+0300 U+0301 U+0302 U+0303 U+0304 U+0306 U+0307 U+0308 U+030C  
+
+c Extended Latin characters
+store(extChar_key_lower) "[]qj"
+store(extChar_key_upper) "{}QJ"
+store(extChar_char_lower) U+025b U+0254 U+014B U+0259 
+store(extChar_char_upper) U+0190 U+0186 U+014A U+018e 
+
+c do not work with deadkey
+store(nonBase) "123457=!@#$%^&()+|;,<.>/?"
+
+c all diacritics
+store(diacriticKey) outs(cc220_Key) outs(cc230_Key)
+store(diacriticChar) outs(cc220_Char) outs(cc230_Char)
+
+c all extended Latin characters and diacritics
+store(allExt_keys) outs(extChar_key_lower) outs(extChar_key_upper) outs(cc220_Key) outs(cc230_Key)
+store(allExt_chars) outs(extChar_char_lower) outs(extChar_char_upper) outs(cc220_Char) outs(cc230_Char)
+
+group(main) using keys
+
++ "\" > dk(1) 
+dk(1) + "\" > "\"
+dk(1) + any(nonBase) > context beep
+
+c suppress invalid key sequences for extended latin
+
+c limit base characters that support multiple diacritics to maximum of two combining class 230 diacritics
+any(cc230_Char) any(cc230_Char) dk(1) + any(cc230_Key) > context(1) context(2) beep
+any(cc220_Char) any(cc230_Char) any(cc230_Char) dk(1) + any(cc230_Key) > context(1) context(2) context(3) beep
+
+c limit base characters that support multiple diacritics to a single combining class 220 diacritic
+any(cc220_Char) dk(1) + any(cc220_Key) > context(1) beep
+any(cc220_Char) any(cc230_Char) dk(1) + any(cc220_Key) > context(1) context(2) beep
+any(cc220_Char) any(cc230_Char) any(cc230_Char) dk(1) + any(cc220_Key) > context(1) context(2) context(3) beep
+
+c prevent entering double diacritics
+U+0323 dk(1) + "*" > context(1) beep
+U+0324 dk(1) + ":" > context(1) beep
+U+0331 dk(1) + "_" > context(1) beep
+U+0300 dk(1) + "`" > context(1) beep  
+U+0301 dk(1) + "'" > context(1) beep  
+U+0302 dk(1) + "6" > context(1) beep  
+U+0303 dk(1) + "~" > context(1) beep  
+U+0304 dk(1) + "-" > context(1) beep  
+U+0306 dk(1) + "9" > context(1) beep  
+U+0307 dk(1) + "8" > context(1) beep  
+U+0308 dk(1) + '"' > context(1) beep
+U+030C dk(1) + "0" > context(1) beep  
+
+c rules for processing extended latin characters
+                    
+c allow Q and X to be typed with deadkeys.
+dk(1) + any(extChar_key_lower) > index(extChar_key_lower,2) use(reorder_diacritics) 
+dk(1) + any(extChar_key_upper) > index(extChar_key_upper,2) use(reorder_diacritics)
+
+c add support for right-alt shift key combination for characters replaced.
++ [SHIFT RALT K_Q] > "Q" use(reorder_diacritics) 
++ [SHIFT RALT K_J] > "J" use(reorder_diacritics) 
++ [SHIFT RALT K_LBRKT] > "{" use(reorder_diacritics) 
++ [SHIFT RALT K_RBRKT] > "}" use(reorder_diacritics) 
+
++ [RALT K_Q] > "q" use(reorder_diacritics) 
++ [RALT K_J] > "j" use(reorder_diacritics)      
++ [RALT K_LBRKT] > "[" use(reorder_diacritics)      
++ [RALT K_RBRKT] > "]" use(reorder_diacritics)      
+             
+c remap the replaced characters to extended characters.
++ any(allExt_keys) > index(allExt_chars,1) use(reorder_diacritics) 
+ 
+
+group(reorder_diacritics)
+any(cc230_Char) any(cc220_Char) > context(2) Context(1)
+any(cc230_Char) any(cc230_Char) any(cc220_Char) > context(3) context(1) context(2) 
+
+c EOF
+
