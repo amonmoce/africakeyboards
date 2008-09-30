@@ -1,0 +1,28 @@
+Linux Installation
+For testing purposes, all the proposed keyboard layouts are being distributed as a single file.  This will appear under linux as one keyboard layout with many variants. After going to testing and acceptance, the keyboard definitions will be grouped by country and language with the respective currency symbol defined.
+To install the African keyboards for linux, perform the following steps:
+1. Copy the Africa X keyboard definition file “Africa” in the linux folder to /etc/X11/xkb/symbols 
+2. Create a backup copy of your existing xorg.xml file in /etc/X11/xkb/rules/xorg.xml
+3. Copy the “xorg.xml” file in the linux folder to /etc/X11/xkb/rules/xorg.xml
+4. Use the gnome/KDE keyboard switcher to choose test the Africa Keyboard 
+ 
+Windows Installation
+The windows keyboard definition files are provided as Microsoft Keyboard Layout Creator 1.4 files.  You’ll need to download, install this package from http://www.microsoft.com/globaldev/tools/msklc.mspx
+Use the MKLC tool to compile and install each of the keyboards you want to test.
+To do this, perform the following steps:
+1.  Go to http://www.microsoft.com/globaldev/tools/msklc.mspx to obtain the MKLC tool.
+2. Install the MKLC tool by following instructions provided by Microsoft.
+3. Lunch the MKLC tool from the Programs menu
+4. From the file menu, select the “Load Source File…” and use the File Open dialog box to locate and open the klc keyboard definition files in the windows folder.
+5. The selected keyboard layout is displayed. From the Project menu, select Validate menu. Windows may return with warning message.  These are safe to ignore. If it fails, review the error log it provides you for a clue to resolving the problem.  Eg. You cannot build a keyboard package that is currently installed on your computer.  Contact kasahorow for assistance if you encounter any difficulties. 
+6. Again, from the Project menu select “Build DLL and Setup Package”
+7. A setup package is created in your current working folder, which is “My Documents” by default.
+8. From windows explorer, navigate to your working folder and lunch the double click on the setup.exe file for your system architecture to launch the installation wizard.  Follow the on-screen instructions to complete the installation.
+9. To select the installed keyboard for testing, navigate to the Control Panel and launch the “Regional and Language options” component.
+10. The Regional and Language Options window opens.   Click the “Languages” tab, and click the “Details” button.
+11.  The Text Services and Input Language window opens. Click the Add button to open the Add Input Language window.
+12. All the keyboards are currently assigned to English language for testing purposes, as not languages have locale support under windows.
+13.  Select the “Keyboard Layout/IME” checkbox to activate installed keyboards drop down list.
+14. From the drop down list, select the keyboard you’ve just installed and click OK.
+15. Click OK again, to close the Text Services and Input Language window.
+16.  A small keyboard icon will appear on windows task bar. Use this icon to switch between installed keyboards.
