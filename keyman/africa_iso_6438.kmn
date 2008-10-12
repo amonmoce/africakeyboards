@@ -13,7 +13,7 @@ c Andrew Cunningham    2008-08-06
 c andrewc AT vicnet.net.au
 c lang.support AT gmail.com
 
-store(&Version) "6.0"
+store(&Version) "7.0"
 c store(&Bitmap) ""
 store(&Copyright) "© 2008 Kasahorow"
 store(&Message) "Keyboard layout designed for ISO 6438 support by Kasahorow."
@@ -43,8 +43,8 @@ store(diacriticKey) outs(cc220_Key) outs(cc230_Key)
 store(diacriticChar) outs(cc220_Char) outs(cc230_Char)
 
 c all extended Latin characters and diacritics
-store(allExt_keys) outs(extChar_key_lower) outs(extChar_key_upper) outs(cc220_Key) outs(cc230_Key)
-store(allExt_chars) outs(extChar_char_lower) outs(extChar_char_upper) outs(cc220_Char) outs(cc230_Char)
+store(allExt_keys) outs(extChar_key_lower) outs(extChar_key_upper) 
+store(allExt_chars) outs(extChar_char_lower) outs(extChar_char_upper) 
 
 group(main) using keys
 
@@ -79,8 +79,83 @@ U+030C dk(1) + "0" > context(1) beep
 
 c rules for processing extended latin characters
 
-dk(1) + any(allExt_keys) > index(allExt_chars,2) use(reorder_diacritics)
+dk(1) + any(allExt_keys) > index(allExt_chars,2)
 
+c diacritic characters can be typed with dead keys
+dk(1) + any(diacriticKey) > index(diacriticChar,2) use(reorder_diacritics) 
+
+
+c diacritic marks can also be typed with right-alt shift key combination          
++ [SHIFT RALT K_8 ] > U+0323 use(reorder_diacritics)
++ [SHIFT RALT K_COLON] > U+0324 use(reorder_diacritics)
++ [SHIFT RALT K_HYPHEN] > U+0331 use(reorder_diacritics)
++ [SHIFT RALT K_BKQUOTE] > U+0303 use(reorder_diacritics)
++ [SHIFT RALT K_QUOTE] > U+0308 use(reorder_diacritics)
+   
++ [RALT K_BKQUOTE] > U+0300 use(reorder_diacritics)
++ [RALT K_QUOTE] > U+0301 use(reorder_diacritics)
++ [RALT K_6] > U+0302 use(reorder_diacritics)
++ [RALT K_HYPHEN] > U+0304 use(reorder_diacritics)
++ [RALT K_9] > U+0306 use(reorder_diacritics)
++ [RALT K_8] > U+0307 use(reorder_diacritics)
++ [RALT K_0] > U+030C use(reorder_diacritics) 
+
++ [RALT K_A] > U+0263
++ [RALT K_B] > U+0253  
++ [RALT K_C] > U+0188  
++ [RALT K_D] > U+0257  
++ [RALT K_E] > U+0259  
++ [RALT K_F] > U+0192  
++ [RALT K_G] > U+0260  
++ [RALT K_H] > U+0127  
++ [RALT K_I] > U+026a  
++ [RALT K_J] > U+0288
++ [RALT K_K] > U+0199
++ [RALT K_L] > U+0292
++ [RALT K_M] > U+0271
++ [RALT K_N] > U+014b
++ [RALT K_O] > U+0275
++ [RALT K_P] > U+01a5
++ [RALT K_Q] > U+025b 
++ [RALT K_R] > U+027d
++ [RALT K_S] > U+0256
++ [RALT K_T] > U+01ad
++ [RALT K_U] > U+028a
++ [RALT K_V] > U+028b
++ [RALT K_W] > U+0254
++ [RALT K_X] > U+03c7
++ [RALT K_Y] > U+01b4
++ [RALT K_Z] > U+0283
++ [RALT K_LBRKT] > U+0298
++ [RALT K_RBRKT] > U+01c1
+
++ [SHIFT RALT K_A] > U+0194
++ [SHIFT RALT K_B] > U+0181  
++ [SHIFT RALT K_C] > U+0187  
++ [SHIFT RALT K_D] > U+018a  
++ [SHIFT RALT K_E] > U+018e
++ [SHIFT RALT K_F] > U+0191  
++ [SHIFT RALT K_G] > U+0193  
++ [SHIFT RALT K_H] > U+0126  
++ [SHIFT RALT K_I] > U+0197  
++ [SHIFT RALT K_J] > U+01ae
++ [SHIFT RALT K_K] > U+0198
++ [SHIFT RALT K_L] > U+01b7
++ [SHIFT RALT K_M] > U+0271
++ [SHIFT RALT K_N] > U+014A
++ [SHIFT RALT K_O] > U+019F
++ [SHIFT RALT K_P] > U+01a4
++ [SHIFT RALT K_Q] > U+0190 
++ [SHIFT RALT K_R] > U+027d
++ [SHIFT RALT K_S] > U+0189
++ [SHIFT RALT K_T] > U+01ac
++ [SHIFT RALT K_U] > U+01b1
++ [SHIFT RALT K_V] > U+01b2
++ [SHIFT RALT K_W] > U+0186
++ [SHIFT RALT K_X] > U+03a7
++ [SHIFT RALT K_Y] > U+01b3
++ [SHIFT RALT K_Z] > U+01a9
+    
 group(reorder_diacritics)
 any(cc230_Char) any(cc220_Char) > context(2) Context(1)
 any(cc230_Char) any(cc230_Char) any(cc220_Char) > context(3) context(1) context(2) 
