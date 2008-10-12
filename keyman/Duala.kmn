@@ -16,8 +16,8 @@ store(cc230_Char) U+0300 U+0301 U+0302 U+0303 U+0304 U+0306 U+0307 U+0308 U+030C
 c Extended Latin characters
 store(extChar_replaced_key_lower) "[]qxv"  
 store(extChar_replaced_key_upper) "{}QXV"
-store(extChar_key_lower) "n"  
-store(extChar_key_upper) "N"
+store(char_key_lower) "n"  
+store(char_key_upper) "N"
 store(extChar_replaced_char_lower) U+025b U+0254 U+014B U+0257 U+0253
 store(extChar_replaced_char_upper) U+0190 U+0186 U+014A U+018a U+0181
 store(extChar_char_lower) U+0272 
@@ -31,8 +31,8 @@ store(diacriticKey) outs(cc220_Key) outs(cc230_Key)
 store(diacriticChar) outs(cc220_Char) outs(cc230_Char)
 
 c all extended Latin characters and diacritics
-store(allExt_keys) outs(extChar_replaced_key_lower) outs(extChar_replaced_key_upper) outs(cc220_Key) outs(cc230_Key)
-store(allExt_chars) outs(extChar_replaced_char_lower) outs(extChar_replaced_char_upper) outs(cc220_Char) outs(cc230_Char)
+store(allExt_keys) outs(extChar_replaced_key_lower) outs(extChar_replaced_key_upper) 
+store(allExt_chars) outs(extChar_replaced_char_lower) outs(extChar_replaced_char_upper) 
 
 group(main) using keys
 
@@ -67,31 +67,48 @@ U+030C dk(1) + "0" > context(1) beep
 
 c rules for processing extended latin characters
                     
-c allow replaced characters to be typed with deadkeys.
-dk(1) + any(extChar_replaced_key_lower) > index(extChar_replaced_key_lower,2) use(reorder_diacritics) 
-dk(1) + any(extChar_replaced_key_upper) > index(extChar_replaced_key_upper,2) use(reorder_diacritics)           
+c allow replaced characters to be typed with deadkeys
+dk(1) + any(allExt_keys) > index(allExt_keys,2)  
+                            
+c diacritic characters can be typed with dead keys
+dk(1) + any(diacriticKey) > index(diacriticChar,2) use(reorder_diacritics) 
 
 c no room left for N with left hook so we make it available at the third shift level. typed with deadkey and right-alt shift
-dk(1) + any(extChar_key_lower) > index(extChar_char_lower,2) use(reorder_diacritics)
-dk(1) + any(extChar_key_upper) > index(extChar_char_lower,2) use(reorder_diacritics)
+dk(1) + any(char_key_lower) > index(extChar_char_lower,2) 
+dk(1) + any(char_key_upper) > index(extChar_char_upper,2) 
  
 c add support for right-alt shift key combination for replaced characters.
-+ [SHIFT RALT K_Q] > "Q" use(reorder_diacritics) 
-+ [SHIFT RALT K_X] > "X" use(reorder_diacritics)     
-+ [SHIFT RALT K_V] > "V" use(reorder_diacritics)
-+ [SHIFT RALT K_N] > U+019d use(reorder_diacritics)  
-+ [SHIFT RALT K_LBRKT] > "{" use(reorder_diacritics)  
-+ [SHIFT RALT K_RBRKT] > "}" use(reorder_diacritics)  
++ [SHIFT RALT K_Q] > "Q" 
++ [SHIFT RALT K_X] > "X"     
++ [SHIFT RALT K_V] > "V" 
++ [SHIFT RALT K_N] > U+019d  
++ [SHIFT RALT K_LBRKT] > "{"  
++ [SHIFT RALT K_RBRKT] > "}"  
 
-+ [RALT K_Q] > "q" use(reorder_diacritics) 
-+ [RALT K_X] > "x" use(reorder_diacritics)      
-+ [RALT K_V] > "v" use(reorder_diacritics)      
-+ [RALT K_N] > U+0272 use(reorder_diacritics) 
-+ [RALT K_LBRKT] > "[" use(reorder_diacritics)      
-+ [RALT K_RBRKT] > "]" use(reorder_diacritics)      
-             
++ [RALT K_Q] > "q"  
++ [RALT K_X] > "x"      
++ [RALT K_V] > "v"       
++ [RALT K_N] > U+0272  
++ [RALT K_LBRKT] > "["     
++ [RALT K_RBRKT] > "]" 
+   
+c diacritic marks can also be typed with right-alt shift key combination          
++ [SHIFT RALT K_8 ] > U+0323 use(reorder_diacritics)
++ [SHIFT RALT K_COLON] > U+0324 use(reorder_diacritics)
++ [SHIFT RALT K_HYPHEN] > U+0331 use(reorder_diacritics)
++ [SHIFT RALT K_BKQUOTE] > U+0303 use(reorder_diacritics)
++ [SHIFT RALT K_QUOTE] > U+0308 use(reorder_diacritics)
+   
++ [RALT K_BKQUOTE] > U+0300 use(reorder_diacritics)
++ [RALT K_QUOTE] > U+0301 use(reorder_diacritics)
++ [RALT K_6] > U+0302 use(reorder_diacritics)
++ [RALT K_HYPHEN] > U+0304 use(reorder_diacritics)
++ [RALT K_9] > U+0306 use(reorder_diacritics)
++ [RALT K_8] > U+0307 use(reorder_diacritics)
++ [RALT K_0] > U+030C use(reorder_diacritics) 
+           
 c remap the replaced characters to extended characters.
-+ any(allExt_keys) > index(allExt_chars,1) use(reorder_diacritics)  
++ any(allExt_keys) > index(allExt_chars,1)  
 
 group(reorder_diacritics)
 any(cc230_Char) any(cc220_Char) > context(2) Context(1)
