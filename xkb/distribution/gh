@@ -60,7 +60,7 @@ xkb_symbols "gbe" {
 
 partial alphanumeric_keys
 xkb_symbols "hausa" {
-    include "gh(fula)"
+    include "gh(basic)"
 
     name[Group1]= "Ghana - Hausa";
 

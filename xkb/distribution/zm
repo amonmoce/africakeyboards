@@ -23,11 +23,10 @@ xkb_symbols "bemba" {
 
     include "zm(basic)"
 
-    name[Group1]= "Bemba - Zambia";
+    name[Group1]= "Zambia - Bemba";
 
     key <AD11> { [ 0x0100014B, 0x0100014A,bracketleft,	 braceleft ] };		//LATIN CAPITAL LETTER ENG
 };
-
 
 
 partial default alphanumeric_keys  
@@ -40,6 +39,7 @@ xkb_symbols "chichewa" {
     key <AD11> { [ 0x0100014B, 0x0100014A,bracketleft,	 braceleft ] };		//LATIN CAPITAL LETTER ENG
     	
 };
+
 
 partial alphanumeric_keys  
 xkb_symbols "shona" {

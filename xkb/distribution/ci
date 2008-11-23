@@ -42,6 +42,48 @@ xkb_symbols "hausa" {
 };
 
 
+partial alphanumeric_keys  
+xkb_symbols "bambara" {
+
+    include "ci(basic)"
+
+    name[Group1]= "Côte d'Ivoire - Bambara";
+    
+    key <AD11> { [ 0x0100025b, 0x01000190,bracketleft,	 braceleft ] };		//LATIN CAPITAL LETTER OPEN E
+    key <AD12> { [ 0x01000254, 0x01000186,bracketright,	braceright ] };		//LATIN CAPITAL LETTER OPEN O
+    key <AB02> { [ 0x01000272, 0x0100019D, 	    x, 		 X ] };		//LATIN CAPITAL LETTER N WITH LEFT HOOK
+    key <AB04> { [ 0x0100014B, 0x0100014A, 	    v,           V ] };		//LATIN CAPITAL LETTER ENG
+    
+};
+
+partial alphanumeric_keys  
+xkb_symbols "dioula" {
+
+    include "ci(basic)"
+
+    name[Group1]= "Côte d'Ivoire - Dioula";
+    
+    key <AD11> { [ 0x0100025b, 0x01000190,bracketleft,	 braceleft ] };		//LATIN CAPITAL LETTER OPEN E
+    key <AD12> { [ 0x01000254, 0x01000186,bracketright,	braceright ] };		//LATIN CAPITAL LETTER OPEN O
+    key <AB02> { [ 0x01000272, 0x0100019D, 	    x, 		 X ] };		//LATIN CAPITAL LETTER N WITH LEFT HOOK
+    key <AB04> { [ 0x0100014B, 0x0100014A, 	    v,           V ] };		//LATIN CAPITAL LETTER ENG
+};
+
+partial default alphanumeric_keys  
+xkb_symbols "fulfulde" {
+
+    include "ci(basic)"
+
+    name[Group1]= "Côte d'Ivoire - Fulfulde";
+    
+    key <AD11> { [ 0x01000257, 0x0100018A,bracketleft,	 braceleft ] };		//LATIN CAPITAL LETTER D WITH HOOK
+    key <AD12> { [ 0x01000253, 0x01000181,bracketright,	braceright ] };		//LATIN CAPITAL LETTER B WITH HOOK
+    key <AD06> { [ 	    y,          Y,  0x010001B4, 0x010001B3 ] };		//LATIN CAPITAL LETTER Y WITH HOOK
+    key <AB04> { [ 0x0100014B, 0x0100014A,	     v, 	 V ] };		//LATIN CAPITAL LETTER ENG
+
+};
+
+
 partial alphanumeric_keys
 xkb_symbols "generic" {
     include "ci(basic)"

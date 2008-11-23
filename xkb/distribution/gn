@@ -18,7 +18,7 @@ xkb_symbols "basic" {
     include "level3(ralt_switch)"
 };
 
-partial default alphanumeric_keys  
+partial alphanumeric_keys  
 xkb_symbols "fulfulde" {
 
     include "gn(basic)"
@@ -31,20 +31,6 @@ xkb_symbols "fulfulde" {
     key <AB04> { [ 0x0100014B, 0x0100014A,	     v, 	 V ] };		//LATIN CAPITAL LETTER ENG
 
 };
-
-partial alphanumeric_keys
-xkb_symbols "hausa" {
-    include "gn(basic)"
-
-    name[Group1]= "Guinea - Hausa";
-
-    key <AD11> { [ 0x01000199, 0x01000198, bracketleft,	 braceleft ] };		//LATIN CAPITAL LETTER K WITH HOOK
-    key <AD12> { [ 0x010001B4, 0x010001B3,bracketright,	braceright ] };		//LATIN CAPITAL LETTER Y WITH HOOK
-    key <AB02> { [ 0x01000257, 0x0100018A,	     x,		 X ] };		//LATIN CAPITAL LETTER D WITH HOOK
-    key <AB04> { [ 0x01000253, 0x01000181,	     v, 	 V ] };		//LATIN CAPITAL LETTER B WITH HOOK
-
-};
-
 
 
 partial alphanumeric_keys

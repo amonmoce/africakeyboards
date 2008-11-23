@@ -53,6 +53,13 @@ xkb_symbols "shona" {
     name[Group1]= "Zimbabwe - Shona";
 };
 
+partial alphanumeric_keys  
+xkb_symbols "zulu" {
+
+    include "zw(basic)"
+
+    name[Group1]= "Zimbabwe - Zulu";
+};
 
 partial alphanumeric_keys
 xkb_symbols "generic" {

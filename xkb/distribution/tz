@@ -37,6 +37,16 @@ xkb_symbols "swahili" {
     name[Group1]= "Tanzania - Swahili";
 };
 
+partial alphanumeric_keys  
+xkb_symbols "bemba" {
+
+    include "tz(basic)"
+
+    name[Group1]= "Tanzania - Bemba";
+
+    key <AD11> { [ 0x0100014B, 0x0100014A,bracketleft,	 braceleft ] };		//LATIN CAPITAL LETTER ENG
+};
+
 
 partial alphanumeric_keys
 xkb_symbols "generic" {

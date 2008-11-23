@@ -29,6 +29,14 @@ xkb_symbols "chichewa" {
 };
 
 
+partial alphanumeric_keys  
+xkb_symbols "zulu" {
+
+    include "mw(basic)"
+
+    name[Group1]= "Malawi - Zulu";
+};
+
 partial alphanumeric_keys
 xkb_symbols "generic" {
     include "lr(basic)"

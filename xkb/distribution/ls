@@ -27,6 +27,15 @@ xkb_symbols "sesotho" {
     
 };
 
+partial alphanumeric_keys  
+xkb_symbols "xhosa" {
+
+    include "ls(basic)"
+
+    name[Group1]= "Lesotho - Xhosa";
+};
+
+
 partial alphanumeric_keys
 xkb_symbols "generic" {
     include "ls(basic)"

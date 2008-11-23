@@ -28,6 +28,20 @@ xkb_symbols "wolof" {
 };
 
 
+partial alphanumeric_keys  
+xkb_symbols "fulfulde" {
+
+    include "gm(basic)"
+
+    name[Group1]= "Gambia - Fulfulde";
+    
+    key <AD11> { [ 0x01000257, 0x0100018A,bracketleft,	 braceleft ] };		//LATIN CAPITAL LETTER D WITH HOOK
+    key <AD12> { [ 0x01000253, 0x01000181,bracketright,	braceright ] };		//LATIN CAPITAL LETTER B WITH HOOK
+    key <AD06> { [ 	    y,          Y,  0x010001B4, 0x010001B3 ] };		//LATIN CAPITAL LETTER Y WITH HOOK
+    key <AB04> { [ 0x0100014B, 0x0100014A,	     v, 	 V ] };		//LATIN CAPITAL LETTER ENG
+
+};
+
 partial alphanumeric_keys
 xkb_symbols "generic" {
     include "gm(basic)"

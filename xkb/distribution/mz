@@ -18,7 +18,7 @@ xkb_symbols "basic" {
     include "level3(ralt_switch)"
 };
 
-partial default alphanumeric_keys  
+partial alphanumeric_keys  
 xkb_symbols "chichewa" {
 
     include "mz(basic)"
@@ -26,7 +26,6 @@ xkb_symbols "chichewa" {
     name[Group1]= "Mozambique - Chichewa";
    
     key <AD11> { [ 0x0100014B, 0x0100014A,bracketleft,	 braceleft ] };		//LATIN CAPITAL LETTER ENG
-    	
 };
 
 
@@ -46,6 +45,16 @@ xkb_symbols "shona" {
 
     name[Group1]= "Mozambique - Shona";
 };
+
+
+partial alphanumeric_keys  
+xkb_symbols "zulu" {
+
+    include "mz(basic)"
+
+    name[Group1]= "Mozambique - Zulu";
+};
+
 
 partial alphanumeric_keys
 xkb_symbols "generic" {

@@ -28,7 +28,18 @@ xkb_symbols "kirundi" {
     name[Group1]= "Congo - Kirundi";
 };
 
-partial default alphanumeric_keys  
+partial alphanumeric_keys  
+xkb_symbols "bemba" {
+
+    include "cd(basic)"
+
+    name[Group1]= "Congo - Bemba";
+
+    key <AD11> { [ 0x0100014B, 0x0100014A,bracketleft,	 braceleft ] };		//LATIN CAPITAL LETTER ENG
+};
+
+
+partial alphanumeric_keys  
 xkb_symbols "lingala" {
 
     include "cd(basic)"
