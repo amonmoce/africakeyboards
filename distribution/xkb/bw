@@ -1,14 +1,10 @@
-/*
-** Botswana
-*/
-partial default alphanumeric_keys  
+partial alphanumeric_keys  
 xkb_symbols "basic" {
 
     include "us"
 
     name[Group1]= "Botswana";
 
-    key <AE04> { [          4, 0x010020B5,     dollar,       cent ] };
     key <AC10> { [ semicolon,	    colon,  0x01000324,  0x01000324 ] };	//COMBINING DIAERESIS BELOW	
     key <AC11> { [apostrophe,    quotedbl,  0x01000301,  0x01000308 ] };	//COMBINING ACUTE ACCENT, COMBINING DIAERESIS
     key <TLDE> { [     grave,  asciitilde,  0x01000300,  0x01000303 ] };	//COMBINING GRAVE ACCENT, COMBINING TILDE
@@ -36,7 +32,6 @@ xkb_symbols "shona" {
 
     name[Group1]= "Shona";
 };
-
 
 partial alphanumeric_keys
 xkb_symbols "generic" {
@@ -80,5 +75,3 @@ xkb_symbols "generic" {
 
     key <AE12> { [          equal,       plus, 0x010001C2              ] };		//LATIN LETTER ALVEOLAR CLICK
 };
-
-

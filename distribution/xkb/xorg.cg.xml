@@ -1,0 +1,22 @@
+    <layout>
+      <configItem>
+        <name>cg</name>
+        <shortDescription>RDC</shortDescription>
+        <description>Democratic Republic of the Congo</description>
+        <languageList><iso639Id>fra</iso639Id></languageList>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>generic</name>
+            <description>Multilingual</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>lingala</name>
+            <description>Lingala</description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>

@@ -1,0 +1,22 @@
+    <layout>
+      <configItem>
+        <name>lr</name>
+        <shortDescription>Lib</shortDescription>
+        <description>Liberia</description>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>generic</name>
+            <description>Multilingual</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>bassa</name>
+            <description>Bassa</description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+    

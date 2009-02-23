@@ -1,0 +1,22 @@
+    <layout>
+      <configItem>
+        <name>gw</name>
+        <shortDescription>Guinea-Bissau</shortDescription>
+        <description>Guinea-Bissau</description>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>generic</name>
+            <description>Multilingual</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>fulfulde</name>
+            <description>Fulfulde</description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+    

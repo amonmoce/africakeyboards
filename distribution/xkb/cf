@@ -1,12 +1,10 @@
-/* Central African Republic */
-partial default alphanumeric_keys  
+partial alphanumeric_keys  
 xkb_symbols "basic" {
 
     include "us"
 
     name[Group1]= "Central African Republic";
 
-    key <AE04> { [          4, 0x010020B5,     dollar,       cent ] };
     key <AC10> { [ semicolon,	    colon,  0x01000324,  0x01000324 ] };	//COMBINING DIAERESIS BELOW	
     key <AC11> { [apostrophe,    quotedbl,  0x01000301,  0x01000308 ] };	//COMBINING ACUTE ACCENT, COMBINING DIAERESIS
     key <TLDE> { [     grave,  asciitilde,  0x01000300,  0x01000303 ] };	//COMBINING GRAVE ACCENT, COMBINING TILDE
@@ -18,13 +16,13 @@ xkb_symbols "basic" {
  
     include "level3(ralt_switch)"
 };
+				
 
-
-partial alphanumeric_keys
+partial default alphanumeric_keys
 xkb_symbols "hausa" {
     include "cf(basic)"
 
-    name[Group1]= "Central African Republic - Hausa";
+    name[Group1]= "Hausa";
 
     key <AD11> { [ 0x01000199, 0x01000198, bracketleft,	 braceleft ] };		//LATIN CAPITAL LETTER K WITH HOOK
     key <AD12> { [ 0x010001B4, 0x010001B3,bracketright,	braceright ] };		//LATIN CAPITAL LETTER Y WITH HOOK
@@ -33,12 +31,12 @@ xkb_symbols "hausa" {
 
 };
 
-partial  alphanumeric_keys  
+partial alphanumeric_keys  
 xkb_symbols "fulfulde" {
 
     include "cf(basic)"
 
-    name[Group1]= "Central African Republic - Fulfulde";
+    name[Group1]= "Fulfulde";
     
     key <AD11> { [ 0x01000257, 0x0100018A,bracketleft,	 braceleft ] };		//LATIN CAPITAL LETTER D WITH HOOK
     key <AD12> { [ 0x01000253, 0x01000181,bracketright,	braceright ] };		//LATIN CAPITAL LETTER B WITH HOOK
@@ -47,13 +45,11 @@ xkb_symbols "fulfulde" {
 
 };
 
-
-
 partial alphanumeric_keys
 xkb_symbols "generic" {
     include "cf(basic)"
 
-    name[Group1]= "Central African Republic - Multilingual";
+    name[Group1]= "Multilingual";
 
     key <AB01> { [		z,          Z, 0x010001A9,  0x01000283 ] };		//LATIN CAPITAL LETTER ESH
     key <AB02> { [		x,          X, 0x010003A7,  0x010003C7 ] };		//GREEK SMALL LETTER CHI
@@ -91,5 +87,3 @@ xkb_symbols "generic" {
 
     key <AE12> { [          equal,       plus, 0x010001C2              ] };		//LATIN LETTER ALVEOLAR CLICK
 };
-
-

@@ -20,7 +20,7 @@ xkb_symbols "basic" {
     include "level3(ralt_switch)"
 };
 
-partial alphanumeric_keys
+partial default alphanumeric_keys
 xkb_symbols "akan" {
     include "gh(basic)"
 
@@ -43,7 +43,7 @@ xkb_symbols "ga" {
 };
 
 partial alphanumeric_keys
-xkb_symbols "gbe" {
+xkb_symbols "ewe" {
     include "gh(basic)"
 
     name[Group1]= "Ewe";
