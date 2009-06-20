@@ -1,0 +1,572 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C7F09718-7920-4832-B3F4-5395E7A1829C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kasahorow.KeyboardInstaller</RootNamespace>
+    <AssemblyName>Kasahorow.KeyboardInstaller</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BugReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinishForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinishForm.Designer.cs">
+      <DependentUpon>FinishForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReviewForm.Designer.cs">
+      <DependentUpon>ReviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FontForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FontForm.designer.cs">
+      <DependentUpon>FontForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeyboardForm.designer.cs">
+      <DependentUpon>KeyboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LanguageResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LanguageResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LineControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LineControl.Designer.cs">
+      <DependentUpon>LineControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BugReport.resx">
+      <DependentUpon>BugReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinishForm.resx">
+      <DependentUpon>FinishForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReviewForm.resx">
+      <DependentUpon>ReviewForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FontForm.resx">
+      <DependentUpon>FontForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeyboardForm.resx">
+      <DependentUpon>KeyboardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LanguageResource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LanguageResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LineControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LineControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeForm.Designer.cs">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win32.cs" />
+    <Compile Include="WizardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kasahorow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\dejavu\DejaVuSans-Bold.ttf" />
+    <Content Include="fonts\dejavu\DejaVuSans-BoldOblique.ttf" />
+    <Content Include="fonts\dejavu\DejaVuSans-ExtraLight.ttf" />
+    <Content Include="fonts\dejavu\DejaVuSans-Oblique.ttf" />
+    <Content Include="fonts\dejavu\DejaVuSans.ttf" />
+    <Content Include="fonts\dejavu\DejaVuSansCondensed-Bold.ttf" />
+    <Content Include="fonts\dejavu\DejaVuSansCondensed-BoldOblique.ttf" />
+    <Content Include="fonts\dejavu\DejaVuSansCondensed-Oblique.ttf" />
+    <Content Include="fonts\dejavu\DejaVuSansCondensed.ttf" />
+    <Content Include="fonts\dejavu\DejaVuSansMono-Bold.ttf" />
+    <Content Include="fonts\dejavu\DejaVuSansMono-BoldOblique.ttf" />
+    <Content Include="fonts\dejavu\DejaVuSansMono-Oblique.ttf" />
+    <Content Include="fonts\dejavu\DejaVuSansMono.ttf" />
+    <Content Include="fonts\dejavu\DejaVuSerif-Bold.ttf" />
+    <Content Include="fonts\dejavu\DejaVuSerif-BoldItalic.ttf" />
+    <Content Include="fonts\dejavu\DejaVuSerif-Italic.ttf" />
+    <Content Include="fonts\dejavu\DejaVuSerif.ttf" />
+    <Content Include="fonts\dejavu\DejaVuSerifCondensed-Bold.ttf" />
+    <Content Include="fonts\dejavu\DejaVuSerifCondensed-BoldItalic.ttf" />
+    <Content Include="fonts\dejavu\DejaVuSerifCondensed-Italic.ttf" />
+    <Content Include="fonts\dejavu\DejaVuSerifCondensed.ttf" />
+    <Content Include="fonts\Doulos\DoulosSILR.ttf" />
+    <Content Include="fonts\Gentium\GenAI102.TTF" />
+    <Content Include="fonts\Gentium\GenAR102.TTF" />
+    <Content Include="fonts\Gentium\GenI102.TTF" />
+    <Content Include="fonts\Gentium\GenR102.TTF" />
+    <Content Include="keyboards\benin\aja\Aja_amd64.msi" />
+    <Content Include="keyboards\benin\aja\Aja_i386.msi" />
+    <Content Include="keyboards\benin\aja\Aja_ia64.msi" />
+    <Content Include="keyboards\benin\fon\Fon_amd64.msi" />
+    <Content Include="keyboards\benin\fon\Fon_i386.msi" />
+    <Content Include="keyboards\benin\fon\Fon_ia64.msi" />
+    <Content Include="keyboards\benin\fulfulde\Fulfulde_amd64.msi" />
+    <Content Include="keyboards\benin\fulfulde\Fulfulde_i386.msi" />
+    <Content Include="keyboards\benin\fulfulde\Fulfulde_ia64.msi" />
+    <Content Include="keyboards\benin\hausa\Hausa_amd64.msi" />
+    <Content Include="keyboards\benin\hausa\Hausa_i386.msi" />
+    <Content Include="keyboards\benin\hausa\Hausa_ia64.msi" />
+    <Content Include="keyboards\benin\yoruba\Yoruba_amd64.msi" />
+    <Content Include="keyboards\benin\yoruba\Yoruba_i386.msi" />
+    <Content Include="keyboards\benin\yoruba\Yoruba_ia64.msi" />
+    <Content Include="keyboards\Botswana\Shona\Shona_amd64.msi" />
+    <Content Include="keyboards\Botswana\Shona\Shona_i386.msi" />
+    <Content Include="keyboards\Botswana\Shona\Shona_ia64.msi" />
+    <Content Include="keyboards\Botswana\Tswana\Tswana_amd64.msi" />
+    <Content Include="keyboards\Botswana\Tswana\Tswana_i386.msi" />
+    <Content Include="keyboards\Botswana\Tswana\Tswana_ia64.msi" />
+    <Content Include="keyboards\burkinafaso\bambara\Bambara_amd64.msi" />
+    <Content Include="keyboards\burkinafaso\bambara\Bambara_i386.msi" />
+    <Content Include="keyboards\burkinafaso\bambara\Bambara_ia64.msi" />
+    <Content Include="keyboards\burkinafaso\dioula\Dioula_amd64.msi" />
+    <Content Include="keyboards\burkinafaso\dioula\Dioula_i386.msi" />
+    <Content Include="keyboards\burkinafaso\dioula\Dioula_ia64.msi" />
+    <Content Include="keyboards\burkinafaso\Fulfulde\Fulfulde_amd64.msi" />
+    <Content Include="keyboards\burkinafaso\Fulfulde\Fulfulde_i386.msi" />
+    <Content Include="keyboards\burkinafaso\Fulfulde\Fulfulde_ia64.msi" />
+    <Content Include="keyboards\burkinafaso\hausa\Hausa_amd64.msi" />
+    <Content Include="keyboards\burkinafaso\hausa\Hausa_i386.msi" />
+    <Content Include="keyboards\burkinafaso\hausa\Hausa_ia64.msi" />
+    <Content Include="keyboards\congo\bemba\cgBemba_amd64.msi" />
+    <Content Include="keyboards\congo\bemba\cgBemba_i386.msi" />
+    <Content Include="keyboards\congo\bemba\cgBemba_ia64.msi" />
+    <Content Include="keyboards\congo\kirundi\cgKirund_amd64.msi" />
+    <Content Include="keyboards\congo\kirundi\cgKirund_i386.msi" />
+    <Content Include="keyboards\congo\kirundi\cgKirund_ia64.msi" />
+    <Content Include="keyboards\congo\lingala\cgLingal_amd64.msi" />
+    <Content Include="keyboards\congo\lingala\cgLingal_i386.msi" />
+    <Content Include="keyboards\congo\lingala\cgLingal_ia64.msi" />
+    <Content Include="keyboards\congo\swahili\cgSwahil_amd64.msi" />
+    <Content Include="keyboards\congo\swahili\cgSwahil_i386.msi" />
+    <Content Include="keyboards\congo\swahili\cgSwahil_ia64.msi" />
+    <Content Include="keyboards\cotedivoire\Bambara\Bambara_amd64.msi" />
+    <Content Include="keyboards\cotedivoire\Bambara\Bambara_i386.msi" />
+    <Content Include="keyboards\cotedivoire\Bambara\Bambara_ia64.msi" />
+    <Content Include="keyboards\cotedivoire\Baule\Baule_amd64.msi" />
+    <Content Include="keyboards\cotedivoire\Baule\Baule_i386.msi" />
+    <Content Include="keyboards\cotedivoire\Baule\Baule_ia64.msi" />
+    <Content Include="keyboards\cotedivoire\Fulfulde\Fulfulde_amd64.msi" />
+    <Content Include="keyboards\cotedivoire\Fulfulde\Fulfulde_i386.msi" />
+    <Content Include="keyboards\cotedivoire\Fulfulde\Fulfulde_ia64.msi" />
+    <Content Include="keyboards\cotedivoire\Hausa\Hausa_amd64.msi" />
+    <Content Include="keyboards\cotedivoire\Hausa\Hausa_i386.msi" />
+    <Content Include="keyboards\cotedivoire\Hausa\Hausa_ia64.msi" />
+    <Content Include="keyboards\ghana\akan\amd64\ghAkan.dll" />
+    <Content Include="keyboards\ghana\akan\i386\ghAkan.dll" />
+    <Content Include="keyboards\ghana\akan\ia64\ghAkan.dll" />
+    <Content Include="keyboards\ghana\akan\setup.exe" />
+    <Content Include="keyboards\ghana\akan\wow64\ghAkan.dll" />
+    <Content Include="keyboards\ghana\ewe\amd64\ghGbe.dll" />
+    <Content Include="keyboards\ghana\ewe\i386\ghGbe.dll" />
+    <Content Include="keyboards\ghana\ewe\ia64\ghGbe.dll" />
+    <Content Include="keyboards\ghana\ewe\setup.exe" />
+    <Content Include="keyboards\benin\aja\amd64\Aja.dll" />
+    <Content Include="keyboards\benin\aja\i386\Aja.dll" />
+    <Content Include="keyboards\benin\aja\ia64\Aja.dll" />
+    <Content Include="keyboards\benin\aja\setup.exe" />
+    <Content Include="keyboards\benin\aja\wow64\Aja.dll" />
+    <Content Include="keyboards\benin\fon\amd64\Fon.dll" />
+    <Content Include="keyboards\benin\fon\i386\Fon.dll" />
+    <Content Include="keyboards\benin\fon\ia64\Fon.dll" />
+    <Content Include="keyboards\benin\fon\setup.exe" />
+    <Content Include="keyboards\benin\fon\wow64\Fon.dll" />
+    <Content Include="keyboards\benin\fulfulde\amd64\Fulfulde.dll" />
+    <Content Include="keyboards\benin\fulfulde\i386\Fulfulde.dll" />
+    <Content Include="keyboards\benin\fulfulde\ia64\Fulfulde.dll" />
+    <Content Include="keyboards\benin\fulfulde\setup.exe" />
+    <Content Include="keyboards\benin\fulfulde\wow64\Fulfulde.dll" />
+    <Content Include="keyboards\benin\hausa\amd64\Hausa.dll" />
+    <Content Include="keyboards\benin\hausa\i386\Hausa.dll" />
+    <Content Include="keyboards\benin\hausa\ia64\Hausa.dll" />
+    <Content Include="keyboards\benin\hausa\setup.exe" />
+    <Content Include="keyboards\benin\hausa\wow64\Hausa.dll" />
+    <Content Include="keyboards\benin\yoruba\amd64\Yoruba.dll" />
+    <Content Include="keyboards\benin\yoruba\i386\Yoruba.dll" />
+    <Content Include="keyboards\benin\yoruba\ia64\Yoruba.dll" />
+    <Content Include="keyboards\benin\yoruba\setup.exe" />
+    <Content Include="keyboards\benin\yoruba\wow64\Yoruba.dll" />
+    <Content Include="keyboards\Botswana\Shona\amd64\Shona.dll" />
+    <Content Include="keyboards\Botswana\Shona\i386\Shona.dll" />
+    <Content Include="keyboards\Botswana\Shona\ia64\Shona.dll" />
+    <Content Include="keyboards\Botswana\Shona\setup.exe" />
+    <Content Include="keyboards\Botswana\Shona\wow64\Shona.dll" />
+    <Content Include="keyboards\Botswana\Tswana\amd64\Tswana.dll" />
+    <Content Include="keyboards\Botswana\Tswana\i386\Tswana.dll" />
+    <Content Include="keyboards\Botswana\Tswana\ia64\Tswana.dll" />
+    <Content Include="keyboards\Botswana\Tswana\setup.exe" />
+    <Content Include="keyboards\Botswana\Tswana\wow64\Tswana.dll" />
+    <Content Include="keyboards\burkinafaso\bambara\amd64\Bambara.dll" />
+    <Content Include="keyboards\burkinafaso\bambara\i386\Bambara.dll" />
+    <Content Include="keyboards\burkinafaso\bambara\ia64\Bambara.dll" />
+    <Content Include="keyboards\burkinafaso\bambara\setup.exe" />
+    <Content Include="keyboards\burkinafaso\bambara\wow64\Bambara.dll" />
+    <Content Include="keyboards\burkinafaso\dioula\amd64\Dioula.dll" />
+    <Content Include="keyboards\burkinafaso\dioula\i386\Dioula.dll" />
+    <Content Include="keyboards\burkinafaso\dioula\ia64\Dioula.dll" />
+    <Content Include="keyboards\burkinafaso\dioula\setup.exe" />
+    <Content Include="keyboards\burkinafaso\dioula\wow64\Dioula.dll" />
+    <Content Include="keyboards\burkinafaso\Fulfulde\amd64\Fulfulde.dll" />
+    <Content Include="keyboards\burkinafaso\Fulfulde\i386\Fulfulde.dll" />
+    <Content Include="keyboards\burkinafaso\Fulfulde\ia64\Fulfulde.dll" />
+    <Content Include="keyboards\burkinafaso\Fulfulde\setup.exe" />
+    <Content Include="keyboards\burkinafaso\Fulfulde\wow64\Fulfulde.dll" />
+    <Content Include="keyboards\burkinafaso\hausa\amd64\Hausa.dll" />
+    <Content Include="keyboards\burkinafaso\hausa\i386\Hausa.dll" />
+    <Content Include="keyboards\burkinafaso\hausa\ia64\Hausa.dll" />
+    <Content Include="keyboards\burkinafaso\hausa\setup.exe" />
+    <Content Include="keyboards\burkinafaso\hausa\wow64\Hausa.dll" />
+    <Content Include="keyboards\congo\bemba\amd64\cgBemba.dll" />
+    <Content Include="keyboards\congo\bemba\i386\cgBemba.dll" />
+    <Content Include="keyboards\congo\bemba\ia64\cgBemba.dll" />
+    <Content Include="keyboards\congo\bemba\setup.exe" />
+    <Content Include="keyboards\congo\bemba\wow64\cgBemba.dll" />
+    <Content Include="keyboards\congo\kirundi\amd64\cgKirund.dll" />
+    <Content Include="keyboards\congo\kirundi\i386\cgKirund.dll" />
+    <Content Include="keyboards\congo\kirundi\ia64\cgKirund.dll" />
+    <Content Include="keyboards\congo\kirundi\setup.exe" />
+    <Content Include="keyboards\congo\kirundi\wow64\cgKirund.dll" />
+    <Content Include="keyboards\congo\lingala\amd64\cgLingal.dll" />
+    <Content Include="keyboards\congo\lingala\i386\cgLingal.dll" />
+    <Content Include="keyboards\congo\lingala\ia64\cgLingal.dll" />
+    <Content Include="keyboards\congo\lingala\setup.exe" />
+    <Content Include="keyboards\congo\lingala\wow64\cgLingal.dll" />
+    <Content Include="keyboards\congo\swahili\amd64\cgSwahil.dll" />
+    <Content Include="keyboards\congo\swahili\i386\cgSwahil.dll" />
+    <Content Include="keyboards\congo\swahili\ia64\cgSwahil.dll" />
+    <Content Include="keyboards\congo\swahili\setup.exe" />
+    <Content Include="keyboards\congo\swahili\wow64\cgSwahil.dll" />
+    <Content Include="keyboards\cotedivoire\Bambara\amd64\Bambara.dll" />
+    <Content Include="keyboards\cotedivoire\Bambara\i386\Bambara.dll" />
+    <Content Include="keyboards\cotedivoire\Bambara\ia64\Bambara.dll" />
+    <Content Include="keyboards\cotedivoire\Bambara\setup.exe" />
+    <Content Include="keyboards\cotedivoire\Bambara\wow64\Bambara.dll" />
+    <Content Include="keyboards\cotedivoire\Baule\amd64\Baule.dll" />
+    <Content Include="keyboards\cotedivoire\Baule\i386\Baule.dll" />
+    <Content Include="keyboards\cotedivoire\Baule\ia64\Baule.dll" />
+    <Content Include="keyboards\cotedivoire\Baule\setup.exe" />
+    <Content Include="keyboards\cotedivoire\Baule\wow64\Baule.dll" />
+    <Content Include="keyboards\cotedivoire\Fulfulde\amd64\Fulfulde.dll" />
+    <Content Include="keyboards\cotedivoire\Fulfulde\i386\Fulfulde.dll" />
+    <Content Include="keyboards\cotedivoire\Fulfulde\ia64\Fulfulde.dll" />
+    <Content Include="keyboards\cotedivoire\Fulfulde\setup.exe" />
+    <Content Include="keyboards\cotedivoire\Fulfulde\wow64\Fulfulde.dll" />
+    <Content Include="keyboards\cotedivoire\Hausa\amd64\Hausa.dll" />
+    <Content Include="keyboards\cotedivoire\Hausa\i386\Hausa.dll" />
+    <Content Include="keyboards\cotedivoire\Hausa\ia64\Hausa.dll" />
+    <Content Include="keyboards\cotedivoire\Hausa\setup.exe" />
+    <Content Include="keyboards\cotedivoire\Hausa\wow64\Hausa.dll" />
+    <Content Include="keyboards\ghana\ewe\wow64\ghGbe.dll" />
+    <Content Include="keyboards\ghana\fula\amd64\ghFula.dll" />
+    <Content Include="keyboards\ghana\fula\i386\ghFula.dll" />
+    <Content Include="keyboards\ghana\fula\ia64\ghFula.dll" />
+    <Content Include="keyboards\ghana\fula\setup.exe" />
+    <Content Include="keyboards\ghana\fula\wow64\ghFula.dll" />
+    <Content Include="keyboards\ghana\ga\amd64\Ga.dll" />
+    <Content Include="keyboards\ghana\ga\i386\Ga.dll" />
+    <Content Include="keyboards\ghana\ga\ia64\Ga.dll" />
+    <Content Include="keyboards\ghana\ga\setup.exe" />
+    <Content Include="keyboards\ghana\ga\wow64\Ga.dll" />
+    <Content Include="keyboards\ghana\hausa\amd64\ghHausa.dll" />
+    <Content Include="keyboards\ghana\hausa\i386\ghHausa.dll" />
+    <Content Include="keyboards\ghana\hausa\ia64\ghHausa.dll" />
+    <Content Include="keyboards\ghana\hausa\setup.exe" />
+    <Content Include="keyboards\ghana\hausa\wow64\ghHausa.dll" />
+    <Content Include="keyboards\ghana\akan\ghAkan_amd64.msi" />
+    <Content Include="keyboards\ghana\akan\ghAkan_i386.msi" />
+    <Content Include="keyboards\ghana\akan\ghAkan_ia64.msi" />
+    <Content Include="keyboards\ghana\ewe\ghGbe_amd64.msi" />
+    <Content Include="keyboards\ghana\ewe\ghGbe_i386.msi" />
+    <Content Include="keyboards\ghana\ewe\ghGbe_ia64.msi" />
+    <Content Include="keyboards\ghana\fula\ghFula_amd64.msi" />
+    <Content Include="keyboards\ghana\fula\ghFula_i386.msi" />
+    <Content Include="keyboards\ghana\fula\ghFula_ia64.msi" />
+    <Content Include="keyboards\ghana\ga\Ga_amd64.msi" />
+    <Content Include="keyboards\ghana\ga\Ga_i386.msi" />
+    <Content Include="keyboards\ghana\ga\Ga_ia64.msi" />
+    <Content Include="keyboards\ghana\hausa\ghHausa_amd64.msi" />
+    <Content Include="keyboards\ghana\hausa\ghHausa_i386.msi" />
+    <Content Include="keyboards\ghana\hausa\ghHausa_ia64.msi" />
+    <Content Include="keyboards\nigeria\hausa\amd64\ngHausa.dll" />
+    <Content Include="keyboards\nigeria\hausa\i386\ngHausa.dll" />
+    <Content Include="keyboards\nigeria\hausa\ia64\ngHausa.dll" />
+    <Content Include="keyboards\nigeria\hausa\setup.exe" />
+    <Content Include="keyboards\nigeria\hausa\wow64\ngHausa.dll" />
+    <Content Include="keyboards\nigeria\igbo\amd64\ngIgbo.dll" />
+    <Content Include="keyboards\nigeria\igbo\i386\ngIgbo.dll" />
+    <Content Include="keyboards\nigeria\igbo\ia64\ngIgbo.dll" />
+    <Content Include="keyboards\nigeria\igbo\setup.exe" />
+    <Content Include="keyboards\nigeria\igbo\wow64\ngIgbo.dll" />
+    <Content Include="keyboards\nigeria\yoruba\amd64\ngYoruba.dll" />
+    <Content Include="keyboards\nigeria\yoruba\i386\ngYoruba.dll" />
+    <Content Include="keyboards\nigeria\yoruba\ia64\ngYoruba.dll" />
+    <Content Include="keyboards\nigeria\yoruba\setup.exe" />
+    <Content Include="keyboards\nigeria\yoruba\wow64\ngYoruba.dll" />
+    <Content Include="keyboards\tanzania\bemba\Bemba_amd64.msi" />
+    <Content Include="keyboards\tanzania\bemba\Bemba_i386.msi" />
+    <Content Include="keyboards\tanzania\bemba\Bemba_ia64.msi" />
+    <Content Include="keyboards\tanzania\Kirundi\Kirundi_amd64.msi" />
+    <Content Include="keyboards\tanzania\Kirundi\Kirundi_i386.msi" />
+    <Content Include="keyboards\tanzania\Kirundi\Kirundi_ia64.msi" />
+    <Content Include="keyboards\tanzania\swahili\Swahili_amd64.msi" />
+    <Content Include="keyboards\tanzania\swahili\Swahili_i386.msi" />
+    <Content Include="keyboards\tanzania\swahili\Swahili_ia64.msi" />
+    <Content Include="keyboards\togo\ewe\Gbe_amd64.msi" />
+    <Content Include="keyboards\togo\ewe\Gbe_i386.msi" />
+    <Content Include="keyboards\togo\ewe\Gbe_ia64.msi" />
+    <Content Include="keyboards\togo\fulfulde\Fulfulde_amd64.msi" />
+    <Content Include="keyboards\togo\fulfulde\Fulfulde_i386.msi" />
+    <Content Include="keyboards\togo\fulfulde\Fulfulde_ia64.msi" />
+    <Content Include="keyboards\togo\hausa\Hausa_amd64.msi" />
+    <Content Include="keyboards\togo\hausa\Hausa_i386.msi" />
+    <Content Include="keyboards\togo\hausa\Hausa_ia64.msi" />
+    <Content Include="keyboards\togo\yoruba\Yoruba_amd64.msi" />
+    <Content Include="keyboards\togo\yoruba\Yoruba_i386.msi" />
+    <Content Include="keyboards\togo\yoruba\Yoruba_ia64.msi" />
+    <Content Include="keyboards\uganda\kirundi\Kirundi_amd64.msi" />
+    <Content Include="keyboards\uganda\kirundi\Kirundi_i386.msi" />
+    <Content Include="keyboards\uganda\kirundi\Kirundi_ia64.msi" />
+    <Content Include="keyboards\uganda\luganda\Luganda_amd64.msi" />
+    <Content Include="keyboards\uganda\luganda\Luganda_i386.msi" />
+    <Content Include="keyboards\uganda\luganda\Luganda_ia64.msi" />
+    <Content Include="keyboards\uganda\swahili\Swahili_amd64.msi" />
+    <Content Include="keyboards\uganda\swahili\Swahili_i386.msi" />
+    <Content Include="keyboards\uganda\swahili\Swahili_ia64.msi" />
+    <Content Include="keyboards\zambia\Bemba\Bemba_amd64.msi" />
+    <Content Include="keyboards\zambia\Bemba\Bemba_i386.msi" />
+    <Content Include="keyboards\zambia\Bemba\Bemba_ia64.msi" />
+    <Content Include="keyboards\zambia\Chichewa\Chichewa_amd64.msi" />
+    <Content Include="keyboards\zambia\Chichewa\Chichewa_i386.msi" />
+    <Content Include="keyboards\zambia\Chichewa\Chichewa_ia64.msi" />
+    <Content Include="keyboards\zambia\Shona\Shona_amd64.msi" />
+    <Content Include="keyboards\zambia\Shona\Shona_i386.msi" />
+    <Content Include="keyboards\zambia\Shona\Shona_ia64.msi" />
+    <Content Include="keyboards\zimbabwe\Chichewa\Chichewa_amd64.msi" />
+    <Content Include="keyboards\zimbabwe\Chichewa\Chichewa_i386.msi" />
+    <Content Include="keyboards\zimbabwe\Chichewa\Chichewa_ia64.msi" />
+    <Content Include="keyboards\zimbabwe\Shona\Shona_amd64.msi" />
+    <Content Include="keyboards\zimbabwe\Shona\Shona_i386.msi" />
+    <Content Include="keyboards\zimbabwe\Shona\Shona_ia64.msi" />
+    <Content Include="keyboards\zimbabwe\Swahili\Swahili_amd64.msi" />
+    <Content Include="keyboards\zimbabwe\Swahili\Swahili_i386.msi" />
+    <Content Include="keyboards\zimbabwe\Swahili\Swahili_ia64.msi" />
+    <Content Include="keyboards\zimbabwe\Tswana\Tswana_amd64.msi" />
+    <Content Include="keyboards\zimbabwe\Tswana\Tswana_i386.msi" />
+    <Content Include="keyboards\zimbabwe\Tswana\Tswana_ia64.msi" />
+    <Content Include="keyboards\zimbabwe\Zulu\Zulu_amd64.msi" />
+    <Content Include="keyboards\zimbabwe\Zulu\Zulu_i386.msi" />
+    <Content Include="keyboards\zimbabwe\Zulu\Zulu_ia64.msi" />
+    <None Include="Resources\configuration1.xml" />
+    <Content Include="keyboards\nigeria\hausa\ngHausa_amd64.msi" />
+    <Content Include="keyboards\nigeria\hausa\ngHausa_i386.msi" />
+    <Content Include="keyboards\nigeria\hausa\ngHausa_ia64.msi" />
+    <Content Include="keyboards\nigeria\igbo\ngIgbo_amd64.msi" />
+    <Content Include="keyboards\nigeria\igbo\ngIgbo_i386.msi" />
+    <Content Include="keyboards\nigeria\igbo\ngIgbo_ia64.msi" />
+    <Content Include="keyboards\nigeria\yoruba\ngYoruba_amd64.msi" />
+    <Content Include="keyboards\nigeria\yoruba\ngYoruba_i386.msi" />
+    <Content Include="keyboards\nigeria\yoruba\ngYoruba_ia64.msi" />
+    <Content Include="keyboards\tanzania\bemba\amd64\Bemba.dll" />
+    <Content Include="keyboards\tanzania\bemba\i386\Bemba.dll" />
+    <Content Include="keyboards\tanzania\bemba\ia64\Bemba.dll" />
+    <Content Include="keyboards\tanzania\bemba\setup.exe" />
+    <Content Include="keyboards\tanzania\bemba\wow64\Bemba.dll" />
+    <Content Include="keyboards\tanzania\Kirundi\amd64\Kirundi.dll" />
+    <Content Include="keyboards\tanzania\Kirundi\i386\Kirundi.dll" />
+    <Content Include="keyboards\tanzania\Kirundi\ia64\Kirundi.dll" />
+    <Content Include="keyboards\tanzania\Kirundi\setup.exe" />
+    <Content Include="keyboards\tanzania\Kirundi\wow64\Kirundi.dll" />
+    <Content Include="keyboards\tanzania\swahili\amd64\Swahili.dll" />
+    <Content Include="keyboards\tanzania\swahili\i386\Swahili.dll" />
+    <Content Include="keyboards\tanzania\swahili\ia64\Swahili.dll" />
+    <Content Include="keyboards\tanzania\swahili\setup.exe" />
+    <Content Include="keyboards\tanzania\swahili\wow64\Swahili.dll" />
+    <Content Include="keyboards\togo\ewe\amd64\Gbe.dll" />
+    <Content Include="keyboards\togo\ewe\i386\Gbe.dll" />
+    <Content Include="keyboards\togo\ewe\ia64\Gbe.dll" />
+    <Content Include="keyboards\togo\ewe\setup.exe" />
+    <Content Include="keyboards\togo\ewe\wow64\Gbe.dll" />
+    <Content Include="keyboards\togo\fulfulde\amd64\Fulfulde.dll" />
+    <Content Include="keyboards\togo\fulfulde\i386\Fulfulde.dll" />
+    <Content Include="keyboards\togo\fulfulde\ia64\Fulfulde.dll" />
+    <Content Include="keyboards\togo\fulfulde\setup.exe" />
+    <Content Include="keyboards\togo\fulfulde\wow64\Fulfulde.dll" />
+    <Content Include="keyboards\togo\hausa\amd64\Hausa.dll" />
+    <Content Include="keyboards\togo\hausa\i386\Hausa.dll" />
+    <Content Include="keyboards\togo\hausa\ia64\Hausa.dll" />
+    <Content Include="keyboards\togo\hausa\setup.exe" />
+    <Content Include="keyboards\togo\hausa\wow64\Hausa.dll" />
+    <Content Include="keyboards\togo\yoruba\amd64\Yoruba.dll" />
+    <Content Include="keyboards\togo\yoruba\i386\Yoruba.dll" />
+    <Content Include="keyboards\togo\yoruba\ia64\Yoruba.dll" />
+    <Content Include="keyboards\togo\yoruba\setup.exe" />
+    <Content Include="keyboards\togo\yoruba\wow64\Yoruba.dll" />
+    <Content Include="keyboards\uganda\kirundi\amd64\Kirundi.dll" />
+    <Content Include="keyboards\uganda\kirundi\i386\Kirundi.dll" />
+    <Content Include="keyboards\uganda\kirundi\ia64\Kirundi.dll" />
+    <Content Include="keyboards\uganda\kirundi\setup.exe" />
+    <Content Include="keyboards\uganda\kirundi\wow64\Kirundi.dll" />
+    <Content Include="keyboards\uganda\luganda\amd64\Luganda.dll" />
+    <Content Include="keyboards\uganda\luganda\i386\Luganda.dll" />
+    <Content Include="keyboards\uganda\luganda\ia64\Luganda.dll" />
+    <Content Include="keyboards\uganda\luganda\setup.exe" />
+    <Content Include="keyboards\uganda\luganda\wow64\Luganda.dll" />
+    <Content Include="keyboards\uganda\swahili\amd64\Swahili.dll" />
+    <Content Include="keyboards\uganda\swahili\i386\Swahili.dll" />
+    <Content Include="keyboards\uganda\swahili\ia64\Swahili.dll" />
+    <Content Include="keyboards\uganda\swahili\setup.exe" />
+    <Content Include="keyboards\uganda\swahili\wow64\Swahili.dll" />
+    <Content Include="keyboards\zambia\Bemba\amd64\Bemba.dll" />
+    <Content Include="keyboards\zambia\Bemba\i386\Bemba.dll" />
+    <Content Include="keyboards\zambia\Bemba\ia64\Bemba.dll" />
+    <Content Include="keyboards\zambia\Bemba\setup.exe" />
+    <Content Include="keyboards\zambia\Bemba\wow64\Bemba.dll" />
+    <Content Include="keyboards\zambia\Chichewa\amd64\Chichewa.dll" />
+    <Content Include="keyboards\zambia\Chichewa\i386\Chichewa.dll" />
+    <Content Include="keyboards\zambia\Chichewa\ia64\Chichewa.dll" />
+    <Content Include="keyboards\zambia\Chichewa\setup.exe" />
+    <Content Include="keyboards\zambia\Chichewa\wow64\Chichewa.dll" />
+    <Content Include="keyboards\zambia\Shona\amd64\Shona.dll" />
+    <Content Include="keyboards\zambia\Shona\i386\Shona.dll" />
+    <Content Include="keyboards\zambia\Shona\ia64\Shona.dll" />
+    <Content Include="keyboards\zambia\Shona\setup.exe" />
+    <Content Include="keyboards\zambia\Shona\wow64\Shona.dll" />
+    <Content Include="keyboards\zimbabwe\Chichewa\amd64\Chichewa.dll" />
+    <Content Include="keyboards\zimbabwe\Chichewa\i386\Chichewa.dll" />
+    <Content Include="keyboards\zimbabwe\Chichewa\ia64\Chichewa.dll" />
+    <Content Include="keyboards\zimbabwe\Chichewa\setup.exe" />
+    <Content Include="keyboards\zimbabwe\Chichewa\wow64\Chichewa.dll" />
+    <Content Include="keyboards\zimbabwe\Shona\amd64\Shona.dll" />
+    <Content Include="keyboards\zimbabwe\Shona\i386\Shona.dll" />
+    <Content Include="keyboards\zimbabwe\Shona\ia64\Shona.dll" />
+    <Content Include="keyboards\zimbabwe\Shona\setup.exe" />
+    <Content Include="keyboards\zimbabwe\Shona\wow64\Shona.dll" />
+    <Content Include="keyboards\zimbabwe\Swahili\amd64\Swahili.dll" />
+    <Content Include="keyboards\zimbabwe\Swahili\i386\Swahili.dll" />
+    <Content Include="keyboards\zimbabwe\Swahili\ia64\Swahili.dll" />
+    <Content Include="keyboards\zimbabwe\Swahili\setup.exe" />
+    <Content Include="keyboards\zimbabwe\Swahili\wow64\Swahili.dll" />
+    <Content Include="keyboards\zimbabwe\Tswana\amd64\Tswana.dll" />
+    <Content Include="keyboards\zimbabwe\Tswana\i386\Tswana.dll" />
+    <Content Include="keyboards\zimbabwe\Tswana\ia64\Tswana.dll" />
+    <Content Include="keyboards\zimbabwe\Tswana\setup.exe" />
+    <Content Include="keyboards\zimbabwe\Tswana\wow64\Tswana.dll" />
+    <Content Include="keyboards\zimbabwe\Zulu\amd64\Zulu.dll" />
+    <Content Include="keyboards\zimbabwe\Zulu\i386\Zulu.dll" />
+    <Content Include="keyboards\zimbabwe\Zulu\ia64\Zulu.dll" />
+    <Content Include="keyboards\zimbabwe\Zulu\setup.exe" />
+    <Content Include="keyboards\zimbabwe\Zulu\wow64\Zulu.dll" />
+    <None Include="Resources\configuration.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="blank\amd64\" />
+    <Folder Include="blank\i386\" />
+    <Folder Include="blank\ia64\" />
+    <Folder Include="blank\wow64\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

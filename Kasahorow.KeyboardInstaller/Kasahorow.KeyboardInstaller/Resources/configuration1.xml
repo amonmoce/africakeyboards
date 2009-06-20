@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <keyboards>
+    <country Name="Ghana" Flag="gh.png">
+        <language Name="Akan" Setup="keyboards/ghana/akan/setup.exe" DisplayName="Ghana - Akan Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></language>
+        <language Name="Ewe" Setup="keyboards/ghana/ewe/setup.exe" DisplayName="Ghana - Ewe Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></language>
+        <language Name="Ga" Setup="keyboards/ghana/ga/setup.exe" DisplayName="Ghana - Ga Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></language>
+        <language Name="Hausa" Setup="keyboards/ghana/hausa/setup.exe" DisplayName="Ghana - Hausa Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></language>
+        <language Name="Fula" Setup="keyboards/ghana/fula/setup.exe" DisplayName="Ghana - Fula Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></language>
+    </country>
+  </keyboards>
+  <fonts>
+    <font Name="Gentium" Path="fonts/Gentium/Gen*" />    
+    <font Name="DejaVu Sans" Path="fonts/dejavu/DejaVuSans-*" />
+    <font Name="DejaVu Sans Condensed" Path="fonts/dejavu/DejaVuSansCondensed*" />
+    <font Name="DejaVu Sans Mono" Path="fonts/dejavu/DejaVuSansMono*" />
+    <font Name="DejaVu Serif" Path="fonts/dejavu/DejaVuSerif-*" />
+    <font Name="DejaVu Serif Condensed" Path="fonts/dejavu/DejaVuSerifCondensed*" />
+    <font Name="Duolos" Path="fonts/Doulos/DoulosSILR.ttf" />
+  </fonts>
+</configuration>

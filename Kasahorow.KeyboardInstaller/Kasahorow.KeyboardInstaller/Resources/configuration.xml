@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <countries>
+    <country Name="Benin">
+      <keyboards>
+        <keyboard Name="Bambara" Setup="keyboards/benin/aja/setup.exe" DisplayName="Benin - Aja Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Dioula" Setup="keyboards/benin/fon/setup.exe" DisplayName="Benin - Fon Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Hausa" Setup="keyboards/benin/Fulfulde/setup.exe" DisplayName="Benin - Fulfulde Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Fulfulde" Setup="keyboards/benin/hausa/setup.exe" DisplayName="Benin - Hausa Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Yoruba" Setup="keyboards/benin/Yoruba/setup.exe" DisplayName="Benin - Yoruba Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+      </keyboards>
+    </country>
+    <country Name="Botswana">
+      <keyboards>
+        <keyboard Name="Shona" Setup="keyboards/Botswana/Shona/setup.exe" DisplayName="Botswana - Shona Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Tswana" Setup="keyboards/Botswana/Tswana/setup.exe" DisplayName="Botswana - Tswana Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+      </keyboards>
+    </country>
+    <country Name="Burkina Faso">
+      <keyboards>
+        <keyboard Name="Bambara" Setup="keyboards/burkinafaso/bambara/setup.exe" DisplayName="Burkina Faso - Bambara Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Dioula" Setup="keyboards/burkinafaso/dioula/setup.exe" DisplayName="Burkina Faso - Dioula Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Hausa" Setup="keyboards/burkinafaso/Fulfulde/setup.exe" DisplayName="Burkina Faso - Fulfulde Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Fulfulde" Setup="keyboards/burkinafaso/hausa/setup.exe" DisplayName="Burkina Faso - Hausa Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+      </keyboards>
+    </country>
+    <country Name="Congo">
+      <keyboards>
+        <keyboard Name="Bemba" Setup="keyboards/congo/bemba/setup.exe" DisplayName="Congo - Bemba Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Kirundi" Setup="keyboards/congo/kirundi/setup.exe" DisplayName="Congo - Kirundi Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Lingala" Setup="keyboards/congo/lingala/setup.exe" DisplayName="Congo - Lingala Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+      </keyboards>
+    </country>
+    <country Name="Côte dIvoire">
+      <keyboards>
+        <keyboard Name="Bambara" Setup="keyboards/cotedivoire/Bambara/setup.exe" DisplayName="Côte d'Ivoire - Bambara Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Baule" Setup="keyboards/cotedivoire/Baule/setup.exe" DisplayName="Côte d'Ivoire - Baule Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Fulfulde" Setup="keyboards/cotedivoire/Fulfulde/setup.exe" DisplayName="Côte d'Ivoire - Fulfulde Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Hausa" Setup="keyboards/cotedivoire/Hausa/setup.exe" DisplayName="Côte d'Ivoire - Hausa Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+      </keyboards>
+    </country>
+    <country Name="Ghana">
+      <keyboards>
+        <keyboard Name="Akan" Setup="keyboards/ghana/akan/setup.exe" DisplayName="Ghana - Akan Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Ewe" Setup="keyboards/ghana/ewe/setup.exe" DisplayName="Ghana - Ewe Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Ga" Setup="keyboards/ghana/ga/setup.exe" DisplayName="Ghana - Ga Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Hausa" Setup="keyboards/ghana/hausa/setup.exe" DisplayName="Ghana - Hausa Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Fula" Setup="keyboards/ghana/fula/setup.exe" DisplayName="Ghana - Fula Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+      </keyboards>
+    </country>
+    <country Name="Nigera">
+        <keyboards>
+          <keyboard Name="Yoruba" Setup="keyboards/nigeria/yoruba/setup.exe" DisplayName="Nigeria - Yoruba Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+          <keyboard Name="Igbo" Setup="keyboards/nigeria/igbo/setup.exe" DisplayName="Nigeria - Igbo Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+          <keyboard Name="Hausa" Setup="keyboards/nigeria/hausa/setup.exe" DisplayName="Nigeria - Hausa Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        </keyboards>
+      </country>
+    <country Name="Tanzania">
+      <keyboards>
+        <keyboard Name="Yoruba" Setup="keyboards/Tanzania/bemba/setup.exe" DisplayName="Tanzania - Bemba Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Igbo" Setup="keyboards/Tanzania/Kirundi/setup.exe" DisplayName="Tanzania - Kirundi Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Hausa" Setup="keyboards/Tanzania/swahili/setup.exe" DisplayName="Tanzania - Swahili Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+      </keyboards>
+    </country>
+    <country Name="Togo">
+      <keyboards>
+        <keyboard Name="Ewe" Setup="keyboards/Togo/ewe/setup.exe" DisplayName="Togo - Ewe Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Fulfulde" Setup="keyboards/Togo/Fulfulde/setup.exe" DisplayName="Togo - Fulfulde Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Hausa" Setup="keyboards/Togo/hausa/setup.exe" DisplayName="Togo - Hausa Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Yoruba" Setup="keyboards/Togo/yoruba/setup.exe" DisplayName="Togo - Yoruba Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+      </keyboards>
+    </country>
+    <country Name="Uganda">
+      <keyboards>
+        <keyboard Name="Kirundi" Setup="keyboards/Uganda/Kirundi/setup.exe" DisplayName="Uganda - Kirundi Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Luganda" Setup="keyboards/Uganda/Luganda/setup.exe" DisplayName="Uganda - Luganda Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Swahili" Setup="keyboards/Uganda/Swahili/setup.exe" DisplayName="Uganda - Swahili Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+      </keyboards>
+    </country>
+    <country Name="Zambia">
+      <keyboards>
+        <keyboard Name="Bemba" Setup="keyboards/zambia/Bemba/setup.exe" DisplayName="Zambia - Bemba Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Chichewa" Setup="keyboards/zambia/Chichewa/setup.exe" DisplayName="Zambia - Chichewa Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Shona" Setup="keyboards/zambia/Shona/setup.exe" DisplayName="Zambia - Shona Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+      </keyboards>
+    </country>
+    <country Name="Zimbabwe">
+      <keyboards>
+        <keyboard Name="Chichewa" Setup="keyboards/zimbabwe/Chichewa/setup.exe" DisplayName="Zimbabwe - Chichewa Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Shona" Setup="keyboards/zimbabwe/Shona/setup.exe" DisplayName="Zimbabwe - Shona Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Swahili" Setup="keyboards/zimbabwe/Swahili/setup.exe" DisplayName="Zimbabwe - Swahili Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Tswana" Setup="keyboards/zimbabwe/Tswana/setup.exe" DisplayName="Zimbabwe - Tswana Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Zulu" Setup="keyboards/zimbabwe/Zulu/setup.exe" DisplayName="Zimbabwe - Zulu Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+      </keyboards>
+    </country>
+    </countries>
+  <fonts>
+    <font Name="Gentium" Path="fonts/Gentium/Gen*" />    
+    <font Name="DejaVu Sans" Path="fonts/dejavu/DejaVuSans-*" />
+    <font Name="DejaVu Sans Condensed" Path="fonts/dejavu/DejaVuSansCondensed*" />
+    <font Name="DejaVu Sans Mono" Path="fonts/dejavu/DejaVuSansMono*" />
+    <font Name="DejaVu Serif" Path="fonts/dejavu/DejaVuSerif-*" />
+    <font Name="DejaVu Serif Condensed" Path="fonts/dejavu/DejaVuSerifCondensed*" />
+    <font Name="Duolos" Path="fonts/Doulos/DoulosSILR.ttf" />
+  </fonts>
+</configuration>
