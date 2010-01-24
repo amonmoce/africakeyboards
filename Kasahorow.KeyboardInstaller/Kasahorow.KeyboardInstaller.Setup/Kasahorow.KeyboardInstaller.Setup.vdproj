@@ -15,6 +15,18 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_79EF907E6A864C169B7CA1484843C97A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C8BE2E09A120484BB7C712784C5B200E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_DCAAD9300EF347CF9790C1ACB8454681"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -115,6 +127,46 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_79EF907E6A864C169B7CA1484843C97A"
+            {
+            "SourcePath" = "8:..\\Kasahorow.KeyboardInstaller\\Resources\\kasahorow.ico"
+            "TargetName" = "8:kasahorow.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_FC4445C8098F44D2BEDF8C7D9DB65DE5"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C8BE2E09A120484BB7C712784C5B200E"
+            {
+            "SourcePath" = "8:..\\Kasahorow.KeyboardInstaller\\Resources\\banner.jpg"
+            "TargetName" = "8:banner.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_FC4445C8098F44D2BEDF8C7D9DB65DE5"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -130,6 +182,17 @@
             "Property" = "8:ProgramMenuFolder"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_ED8837FC200A4C7BBD16C0C95671A0B1"
+                    {
+                    "Name" = "8:Kasahorow"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_D9F9EE74B1FE46459FAB4EC20D535D32"
+                        "Folders"
+                        {
+                        }
+                    }
                 }
             }
             "{1525181F-901A-416C-8A58-119130FE478E}:_BECF75E624434504AD068B70F66BDF2C"
@@ -165,13 +228,14 @@
         "MsiBootstrapper"
         {
         "LangId" = "3:1033"
+        "RequiresElevation" = "11:FALSE"
         }
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Kasahorow Keyboard Installer"
         "ProductCode" = "8:{5E97E846-C869-4A79-95C2-043DEA86B7BE}"
-        "PackageCode" = "8:{266609FE-5FFD-43C5-ABA0-E592EA8E0EA9}"
+        "PackageCode" = "8:{FC6E0DD1-086E-412F-B3E7-4A5CA9824654}"
         "UpgradeCode" = "8:{426CB2BF-6483-4B85-9686-BA8476A56187}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
@@ -187,7 +251,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:Kasahorow keyboard installer."
         "ARPURLINFOABOUT" = "8:http://www.kasahorow.org"
-        "ARPPRODUCTICON" = "8:"
+        "ARPPRODUCTICON" = "8:_79EF907E6A864C169B7CA1484843C97A"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
@@ -292,16 +356,16 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_1EAC3E1693CA4BBE88490C79F415CA57"
             {
-            "Name" = "8:Kasahorow Keyboard Installer"
+            "Name" = "8:Keyboard Installer"
             "Arguments" = "8:"
-            "Description" = "8:"
+            "Description" = "8:Kasahorow keyboard installer"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
             "Target" = "8:_DCAAD9300EF347CF9790C1ACB8454681"
-            "Folder" = "8:_78D35C98A9804894BEEA513DE93564A9"
+            "Folder" = "8:_ED8837FC200A4C7BBD16C0C95671A0B1"
             "WorkingFolder" = "8:_FC4445C8098F44D2BEDF8C7D9DB65DE5"
-            "Icon" = "8:"
+            "Icon" = "8:_79EF907E6A864C169B7CA1484843C97A"
             "Feature" = "8:"
             }
         }
@@ -368,7 +432,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_C8BE2E09A120484BB7C712784C5B200E"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "UpdateText"
@@ -412,7 +477,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_C8BE2E09A120484BB7C712784C5B200E"
                             "UsePlugInResources" = "11:TRUE"
                             }
                         }
@@ -434,7 +500,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_C8BE2E09A120484BB7C712784C5B200E"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "CopyrightWarning"
@@ -482,7 +549,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_C8BE2E09A120484BB7C712784C5B200E"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "InstallAllUsersVisible"
@@ -627,7 +695,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_C8BE2E09A120484BB7C712784C5B200E"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "ShowProgress"
@@ -815,9 +884,6 @@
                 {
                 }
             }
-        }
-        "VJSharpPlugin"
-        {
         }
     }
 }

@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Kasahorow.KeyboardInstaller")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Keyboard installer application")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Kasahorow.org")]
 [assembly: AssemblyProduct("Kasahorow.KeyboardInstaller")]
 [assembly: AssemblyCopyright("Copyright ©  2009")]
 [assembly: AssemblyTrademark("")]

@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kasahorow.KeyboardInstaller", "Kasahorow.KeyboardInstaller\Kasahorow.KeyboardInstaller.csproj", "{C7F09718-7920-4832-B3F4-5395E7A1829C}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Kasahorow.KeyboardInstaller.Setup", "Kasahorow.KeyboardInstaller.Setup\Kasahorow.KeyboardInstaller.Setup.vdproj", "{1CFF49AB-5396-41CB-833C-14E45EF027E9}"
