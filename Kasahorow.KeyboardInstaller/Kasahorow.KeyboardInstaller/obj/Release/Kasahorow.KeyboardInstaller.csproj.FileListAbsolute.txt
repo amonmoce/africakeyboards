@@ -1,0 +1,17 @@
+E:\Projects\africakeyboards\Kasahorow.KeyboardInstaller\Kasahorow.KeyboardInstaller\obj\Release\Kasahorow.KeyboardInstaller.exe
+E:\Projects\africakeyboards\Kasahorow.KeyboardInstaller\Kasahorow.KeyboardInstaller\obj\Release\Kasahorow.KeyboardInstaller.pdb
+E:\Projects\africakeyboards\Kasahorow.KeyboardInstaller\Kasahorow.KeyboardInstaller\bin\Release\Kasahorow.KeyboardInstaller.exe
+E:\Projects\africakeyboards\Kasahorow.KeyboardInstaller\Kasahorow.KeyboardInstaller\bin\Release\Kasahorow.KeyboardInstaller.pdb
+E:\Projects\africakeyboards\Kasahorow.KeyboardInstaller\Kasahorow.KeyboardInstaller\obj\Release\ResolveAssemblyReference.cache
+E:\Projects\africakeyboards\Kasahorow.KeyboardInstaller\Kasahorow.KeyboardInstaller\obj\Release\Kasahorow.KeyboardInstaller.BugReport.resources
+E:\Projects\africakeyboards\Kasahorow.KeyboardInstaller\Kasahorow.KeyboardInstaller\obj\Release\Kasahorow.KeyboardInstaller.FinishForm.resources
+E:\Projects\africakeyboards\Kasahorow.KeyboardInstaller\Kasahorow.KeyboardInstaller\obj\Release\Kasahorow.KeyboardInstaller.ReviewForm.resources
+E:\Projects\africakeyboards\Kasahorow.KeyboardInstaller\Kasahorow.KeyboardInstaller\obj\Release\Kasahorow.KeyboardInstaller.FontForm.resources
+E:\Projects\africakeyboards\Kasahorow.KeyboardInstaller\Kasahorow.KeyboardInstaller\obj\Release\Kasahorow.KeyboardInstaller.KeyboardForm.resources
+E:\Projects\africakeyboards\Kasahorow.KeyboardInstaller\Kasahorow.KeyboardInstaller\obj\Release\Kasahorow.KeyboardInstaller.LanguageResource.resources
+E:\Projects\africakeyboards\Kasahorow.KeyboardInstaller\Kasahorow.KeyboardInstaller\obj\Release\Kasahorow.KeyboardInstaller.MainForm.resources
+E:\Projects\africakeyboards\Kasahorow.KeyboardInstaller\Kasahorow.KeyboardInstaller\obj\Release\Kasahorow.KeyboardInstaller.LineControl.resources
+E:\Projects\africakeyboards\Kasahorow.KeyboardInstaller\Kasahorow.KeyboardInstaller\obj\Release\Kasahorow.KeyboardInstaller.Properties.Resources.resources
+E:\Projects\africakeyboards\Kasahorow.KeyboardInstaller\Kasahorow.KeyboardInstaller\obj\Release\Kasahorow.KeyboardInstaller.Resource.resources
+E:\Projects\africakeyboards\Kasahorow.KeyboardInstaller\Kasahorow.KeyboardInstaller\obj\Release\Kasahorow.KeyboardInstaller.WelcomeForm.resources
+E:\Projects\africakeyboards\Kasahorow.KeyboardInstaller\Kasahorow.KeyboardInstaller\obj\Release\Kasahorow.KeyboardInstaller.csproj.GenerateResource.Cache

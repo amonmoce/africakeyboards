@@ -43,6 +43,7 @@
       <keyboards>
         <keyboard Name="Akan" Setup="keyboards/ghana/akan/setup.exe" DisplayName="Ghana - Akan Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
         <keyboard Name="Ewe" Setup="keyboards/ghana/ewe/setup.exe" DisplayName="Ghana - Ewe Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Ewe (Alt)" Setup="keyboards/ghana/ewe_alt/setup.exe" DisplayName="Ghana - Ewe Keyboard Layout (Alt)" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
         <keyboard Name="Ga" Setup="keyboards/ghana/ga/setup.exe" DisplayName="Ghana - Ga Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
         <keyboard Name="Hausa" Setup="keyboards/ghana/hausa/setup.exe" DisplayName="Ghana - Hausa Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
         <keyboard Name="Fula" Setup="keyboards/ghana/fula/setup.exe" DisplayName="Ghana - Fula Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>

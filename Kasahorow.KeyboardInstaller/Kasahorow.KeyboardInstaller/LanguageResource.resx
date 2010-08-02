@@ -143,7 +143,7 @@ Click the "Exit" button to close this application  or click the
   </data>
   <data name="KeyboardFormMessage" xml:space="preserve">
     <value>Select keyboards to install from the list below and click the 
-Install button to proceed.</value>
+Next button to proceed.</value>
   </data>
   <data name="Keyboards" xml:space="preserve">
     <value>Keyboards</value>
@@ -162,7 +162,7 @@ Install button to proceed.</value>
   </data>
   <data name="ReviewFormNoteMessage" xml:space="preserve">
     <value>Note: The installer will launch a separate dialog windows to install 
-each keyboard.  The fonts would be copied to the Windows Fonts folder.
+each keyboard.  The fonts will be copied to the Windows Fonts folder.
 Click the "Install" button to continue.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
@@ -172,7 +172,7 @@ Click the "Install" button to continue.</value>
     <value>Welcome to the Kasahorow Keyboard installation wizard.
 
 This wizard will guide you through the installation process to select 
-keyboards and fonts to install to your system.
+keyboards and fonts to install on your system.
 
 Click the "Next" button to continue.</value>
   </data>

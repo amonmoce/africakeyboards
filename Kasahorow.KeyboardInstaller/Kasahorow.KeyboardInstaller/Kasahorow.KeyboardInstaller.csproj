@@ -375,6 +375,11 @@
     <Content Include="keyboards\cotedivoire\Hausa\setup.exe" />
     <Content Include="keyboards\cotedivoire\Hausa\wow64\Hausa.dll" />
     <Content Include="keyboards\ghana\ewe\wow64\ghGbe.dll" />
+    <Content Include="keyboards\ghana\ewe_alt\amd64\Gbe%28Alt%29.dll" />
+    <Content Include="keyboards\ghana\ewe_alt\i386\Gbe%28Alt%29.dll" />
+    <Content Include="keyboards\ghana\ewe_alt\ia64\Gbe%28Alt%29.dll" />
+    <Content Include="keyboards\ghana\ewe_alt\setup.exe" />
+    <Content Include="keyboards\ghana\ewe_alt\wow64\Gbe%28Alt%29.dll" />
     <Content Include="keyboards\ghana\fula\amd64\ghFula.dll" />
     <Content Include="keyboards\ghana\fula\i386\ghFula.dll" />
     <Content Include="keyboards\ghana\fula\ia64\ghFula.dll" />
@@ -474,6 +479,9 @@
     <Content Include="keyboards\zimbabwe\Zulu\Zulu_amd64.msi" />
     <Content Include="keyboards\zimbabwe\Zulu\Zulu_i386.msi" />
     <Content Include="keyboards\zimbabwe\Zulu\Zulu_ia64.msi" />
+    <Content Include="keyboards\ghana\ewe_alt\Gbe%28Alt%29_amd64.msi" />
+    <Content Include="keyboards\ghana\ewe_alt\Gbe%28Alt%29_i386.msi" />
+    <Content Include="keyboards\ghana\ewe_alt\Gbe%28Alt%29_ia64.msi" />
     <None Include="Resources\configuration1.xml" />
     <Content Include="keyboards\nigeria\hausa\ngHausa_amd64.msi" />
     <Content Include="keyboards\nigeria\hausa\ngHausa_i386.msi" />
