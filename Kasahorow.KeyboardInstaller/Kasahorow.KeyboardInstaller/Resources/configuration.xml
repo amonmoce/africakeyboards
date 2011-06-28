@@ -49,6 +49,11 @@
         <keyboard Name="Fula" Setup="keyboards/ghana/fula/setup.exe" DisplayName="Ghana - Fula Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
       </keyboards>
     </country>
+    <country Name="Kenya">
+      <keyboards>
+        <keyboard Name="Kikuyu" Setup="keyboards/kenya/kikuyu/setup.exe" DisplayName="Kenya - Kikuyu Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+      </keyboards>
+    </country>
     <country Name="Nigera">
         <keyboards>
           <keyboard Name="Yoruba" Setup="keyboards/nigeria/yoruba/setup.exe" DisplayName="Nigeria - Yoruba Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
@@ -58,9 +63,9 @@
       </country>
     <country Name="Tanzania">
       <keyboards>
-        <keyboard Name="Yoruba" Setup="keyboards/Tanzania/bemba/setup.exe" DisplayName="Tanzania - Bemba Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
-        <keyboard Name="Igbo" Setup="keyboards/Tanzania/Kirundi/setup.exe" DisplayName="Tanzania - Kirundi Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
-        <keyboard Name="Hausa" Setup="keyboards/Tanzania/swahili/setup.exe" DisplayName="Tanzania - Swahili Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Bemba" Setup="keyboards/Tanzania/bemba/setup.exe" DisplayName="Tanzania - Bemba Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Kirundi" Setup="keyboards/Tanzania/Kirundi/setup.exe" DisplayName="Tanzania - Kirundi Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
+        <keyboard Name="Swahili" Setup="keyboards/Tanzania/swahili/setup.exe" DisplayName="Tanzania - Swahili Keyboard Layout" Version="1.0.3.40" Publisher="Kasahorow"></keyboard>
       </keyboards>
     </country>
     <country Name="Togo">

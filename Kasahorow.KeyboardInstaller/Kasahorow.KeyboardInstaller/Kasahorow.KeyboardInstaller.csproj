@@ -410,6 +410,12 @@
     <Content Include="keyboards\ghana\hausa\ghHausa_amd64.msi" />
     <Content Include="keyboards\ghana\hausa\ghHausa_i386.msi" />
     <Content Include="keyboards\ghana\hausa\ghHausa_ia64.msi" />
+    <Content Include="keyboards\kenya\kikuyu\amd64\Kikuyu.dll" />
+    <Content Include="keyboards\kenya\kikuyu\i386\Kikuyu.dll" />
+    <Content Include="keyboards\kenya\kikuyu\ia64\Kikuyu.dll" />
+    <Content Include="keyboards\kenya\kikuyu\setup.exe">
+    </Content>
+    <Content Include="keyboards\kenya\kikuyu\wow64\Kikuyu.dll" />
     <Content Include="keyboards\nigeria\hausa\amd64\ngHausa.dll" />
     <Content Include="keyboards\nigeria\hausa\i386\ngHausa.dll" />
     <Content Include="keyboards\nigeria\hausa\ia64\ngHausa.dll" />
@@ -482,6 +488,12 @@
     <Content Include="keyboards\ghana\ewe_alt\Gbe%28Alt%29_amd64.msi" />
     <Content Include="keyboards\ghana\ewe_alt\Gbe%28Alt%29_i386.msi" />
     <Content Include="keyboards\ghana\ewe_alt\Gbe%28Alt%29_ia64.msi" />
+    <Content Include="keyboards\kenya\kikuyu\Kikuyu_amd64.msi">
+    </Content>
+    <Content Include="keyboards\kenya\kikuyu\Kikuyu_i386.msi">
+    </Content>
+    <Content Include="keyboards\kenya\kikuyu\Kikuyu_ia64.msi">
+    </Content>
     <None Include="Resources\configuration1.xml" />
     <Content Include="keyboards\nigeria\hausa\ngHausa_amd64.msi" />
     <Content Include="keyboards\nigeria\hausa\ngHausa_i386.msi" />

@@ -59,6 +59,21 @@ xkb_symbols "ewe" {
 };
 
 partial alphanumeric_keys
+xkb_symbols "ewe_alt" {
+    include "gh(basic)"
+
+    name[Group1]= "Ewe (Alt)";
+
+    key <AD11> { [ 0x01000192, 0x01000191, bracketleft,	 braceleft ] };		//LATIN CAPITAL LETTER F WITH HOOK
+    key <AD12> { [ 0x01000256, 0x01000189,bracketright,	braceright ] };		//LATIN CAPITAL LETTER AFRICAN D
+    key <AD01> { [ 0x0100025b, 0x01000190,	     q, 	 Q ] };		//LATIN CAPITAL LETTER OPEN E
+    key <AC07> { [ 0x0100014b, 0x0100014a,	     j, 	 J ] };		//LATIN CAPITAL LETTER ENG
+    key <AC10> { [ 0x01000263, 0x01000194,   semicolon,	     colon ] };		//LATIN CAPITAL LETTER GAMMA
+    key <AB03> { [ 0x01000256, 0x01000189, 	     c,	 	 C ] };		//LATIN CAPITAL LETTER OPEN O
+    key <LSGT> { [ 0x0100028B, 0x010001B2,   backslash,        bar ] };		//LATIN CAPITAL LETTER V WITH HOOK
+};
+
+partial alphanumeric_keys
 xkb_symbols "hausa" {
     include "gh(basic)"
 
