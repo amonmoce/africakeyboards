@@ -14,8 +14,6 @@ Icon "kasahorow.ico"
 outFile "${LANGNAME}.exe"
 InstallDir "$PROGRAMFILES\${COMPANYNAME}\${LANGNAME}"
 
-
-
 # installation section
 section "install"
 
