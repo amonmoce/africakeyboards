@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-RESULT=`/usr/bin/open 'http://www.kasahorow.org/ims/gbe?utm_source=osx&utm_medium=installer&utm_campaign=keyboard'`
-
-exit 0
