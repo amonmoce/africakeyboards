@@ -1,0 +1,22 @@
+Automated build tool for the kasahorow keyboard preview source files.
+
+=== Requirements ===
+Install of Go for windows (http://golang.org/), Git (if we need to download deps during the build process). 
+Both tools should exist in PATH.
+
+=== Instructions ===
+Take a look at the config.json file (only valid json is acceptable) and edit it accordingly. Each configuration
+should be present as a separate json object. Each object has the following porperties:
+
+	"langHuReadable" - Keyboard layout name in human readable form. This will be used to locate the windows keyboard layout ID from the registry. 
+					   If in doubt, look up the language name in the control panel (language needs to be present on the system first).
+	"langString" - Language string used in various labels inside the program (e.g. "Switch to Akan.")
+	"infoText" - Info text visible to the user (e.g. "The layout was successfully installed. Try typing something!")
+
+After setting up the config file, open up the console and set the GOPATH environment variable first. For example, if source files are 
+located in "keyboard-preview>src>keyboard-build-tool", set GOPATH like "set GOPATH=C:\keyboard-preview". Once GOPATH is set navigate to the keyboard-build-tool folder and run it. E.g.
+
+cd C:\keyboard-preview\src\keyboard-build-tool 
+keyboard-build-tool.exe
+
+The tool will generate binary files and export them to "keyboard-preivew\bin\win-386\keyboard-bin\".
