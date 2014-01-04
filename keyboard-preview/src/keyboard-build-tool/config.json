@@ -1,7 +1,12 @@
 [
-	{
-		"langHuReadable":"Ghana - Akan Keyboard Layout",
-		"langString":"Akan",
-		"infoText":"Mbo na yɛ!\r\nPress each the following letters on your computer to test your new keyboard:\r\nQ bqyq yie. Xkyena so x bqyq yie."
-	}
+    {
+	"langHuReadable":"Ghana - Akan Keyboard Layout",
+	"langString":"Akan",
+	"infoText":"Mbo na yɛ!\r\nPress each of the following letters on your computer to test your new keyboard:\r\nQ bqyq yie. Xkyena so x bqyq yie."
+    },
+    {
+	"langHuReadable":"Nigeria -Yoruba Keyboard Layout",
+	"langString":"Hausa",
+	"infoText":"Murna!\r\nPress each of the following letters on your computer to test your new keyboard:\r\nQ q X x [ { ] }."
+    }
 ]
