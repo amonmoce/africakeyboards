@@ -26,7 +26,7 @@ func main() {
 		sourcefiles        = []string{"keyboard.go", "regedit.go", "winapi.go", "multilinelabel.go", "rsrc.syso"}
 		mainsource  string
 	)
-	log.Println("Kasaharow keyboard build tool.")
+	log.Println("kasahorow keyboard build tool.")
 	log.Println("Performing sanity checks.")
 	// Various sanity checks.
 	if _, err = exec.LookPath("go"); err != nil {
