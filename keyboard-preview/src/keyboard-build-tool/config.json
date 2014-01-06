@@ -1,12 +1,50 @@
 [
     {
-	"langHuReadable":"Ghana - Akan Keyboard Layout",
+        "langId": "aka",
+	"langHuReadable":"Akan Writer",
 	"langString":"Akan",
 	"infoText":"Mbo na yɛ!\r\nPress each of the following letters on your computer to test your new keyboard:\r\nQ bqyq yie. Xkyena so x bqyq yie."
     },
     {
-	"langHuReadable":"Nigeria -Yoruba Keyboard Layout",
-	"langString":"Hausa",
-	"infoText":"Murna!\r\nPress each of the following letters on your computer to test your new keyboard:\r\nQ q X x [ { ] }."
+        "langId": "gaa",
+        "langHuReadable":"Ga-Dangme Writer",
+        "langString":"Ga-Dangme",
+        "infoText":""
+    },
+    {
+        "langId": "gbe",
+        "langHuReadable":"Gbe Writer",
+        "langString":"Gbe",
+        "infoText":""
+    },
+    {
+        "langId": "hau",
+        "langHuReadable":"Hausa Writer",
+        "langString":"Hausa",
+        "infoText":"Murna!\r\nPress each the following letters on your computer to test your new keyboard:\r\nQ q X x [ { ] }."
+    },
+    {
+        "langId": "kik",
+        "langHuReadable":"Gikuyu Writer",
+        "langString":"Gikuyu",
+        "infoText":"Press each the following letters on your computer to test your new keyboard:\r\nQ q X x."
+    },
+    {
+        "langId": "mos",
+        "langHuReadable":"Moore Writer",
+        "langString":"Moore",
+        "infoText":""
+    },
+    {
+        "langId": "wol",
+        "langHuReadable":"Wolof Writer",
+        "langString":"Wolof",
+        "infoText":""
+    },
+    {
+        "langId": "yor",
+        "langHuReadable":"Yoruba Writer",
+        "langString":"Yoruba",
+        "infoText":"Oriire!\r\nPress each the following letters on your computer to test your new keyboard:\r\nQ q V v X x."
     }
 ]
