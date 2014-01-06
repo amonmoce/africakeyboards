@@ -64,7 +64,7 @@ section "install"
 	file "keyboard-wolof.exe"
 	file "logo.ico"
 	# Add any other files for the install directory (license files, app data, etc) here
- 
+	WriteRegStr HKLM "Software\kasahorow\KWriter\wol" "langString" "Wolof" 
 	# Uninstaller - See function un.onInit and section "uninstall" for configuration
 	writeUninstaller "$INSTDIR\uninstall.exe"
  
@@ -124,5 +124,6 @@ section "uninstall"
  
 	# Remove uninstaller information from the registry
 	DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${COMPANYNAME} ${APPNAME}"
+	DeleteRegKey HKLM "Software\kasahorow\KWriter\wol"
 sectionEnd
 

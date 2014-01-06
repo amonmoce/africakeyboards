@@ -1,0 +1,5 @@
+keyboardapp.nsi generates an executable that combines Wolof.exe and Wolof-app into keyboard-wolof.exe
+
+Upon installing keyboard-wolof.exe, langString is written to "Software\kasahorow\KWriter\wol". The langID (new variable introduced into config.json) in this case is "wol"
+
+The langID will not change as they are standard ISO codes. This design change is important so that the langString and/or langHuReadable can be changed at will.
