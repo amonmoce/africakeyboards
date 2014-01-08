@@ -89,7 +89,7 @@ func main() {
 
 	MainWindow{
 		AssignTo: &mw,
-		Title:    "Kasahorow " + LANG_STRING + " Writer",
+		Title:    "kasahorow " + LANG_STRING + " Writer",
 		MaxSize:  Size{600, 200},
 		MinSize:  Size{600, 200},
 		Layout:   VBox{},
