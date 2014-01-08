@@ -60,7 +60,7 @@ func queryRegLayoutId(layout string) string {
 	}
 	for name := regEnumKeyEx(top, 0); name != ""; i++ {
 		name = regEnumKeyEx(top, i)
-		value := regGetString(top, name, "Layout Text")
+		value := regGetString(top, name, "langId")
 		if value == layout {
 			return strings.ToUpper(name)
 		}
