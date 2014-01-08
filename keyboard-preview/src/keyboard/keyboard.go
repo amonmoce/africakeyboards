@@ -9,9 +9,9 @@ import (
 
 // Tool generated, DO NOT EDIT.
 const (
-	LANG_HU_READABLE = "{{.LangHuReadable}}" // Human readable language identifier.
-	LANG_STRING      = "{{.LangString}}"     // Language name used in varioud labels.
-	INFO_TEXT        = `{{.InfoText}}`       // Help text for info label.
+	LANG_ID     = "{{.LangId}}"     // Unique langauge identifier.
+	LANG_STRING = "{{.LangString}}" // Language name used in varioud labels.
+	INFO_TEXT   = `{{.InfoText}}`   // Help text for info label.
 )
 
 var (
@@ -70,7 +70,7 @@ func queryRegLayoutId(layout string) string {
 
 // Main entry and GUI construction
 func main() {
-	LANG = queryRegLayoutId(LANG_HU_READABLE)
+	LANG = queryRegLayoutId(LANG_ID)
 	var (
 		mw            *walk.MainWindow
 		currentLayout = getKeyboardLayout() // Get current system layout.

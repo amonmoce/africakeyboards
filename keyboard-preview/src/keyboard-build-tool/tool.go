@@ -13,7 +13,7 @@ import (
 )
 
 type ConfigEntry struct {
-	LangHuReadable, LangString, InfoText string
+	LangId, LangString, InfoText string
 }
 
 type Config []ConfigEntry
